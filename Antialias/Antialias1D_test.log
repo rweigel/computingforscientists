@@ -1,0 +1,84 @@
+Test 1
+Using two for loops
+Original: 0.0 0.0 0.0 0.0 0.0 0.0 
+Modified: 0.0 0.0 0.0 0.0 0.0 0.0 
+PASS
+
+Using one for loop
+Original: 0.0 0.0 0.0 0.0 0.0 0.0 
+Modified: 0.0 0.0 0.0 0.0 0.0 0.0 
+PASS
+
+Using one for loop
+Original: 0.0 0.0 0.0 0.0 0.0 0.0 
+Modified: 0.0 0.0 0.0 0.0 0.0 0.0 
+PASS
+
+Using vectorization
+Original: 0.0 0.0 0.0 0.0 0.0 0.0 
+Modified: 0.0 0.0 0.0 0.0 0.0 0.0 
+PASS
+
+Test 2
+Using two for loops
+Original: 1.0 1.0 0.0 0.0 1.0 1.0 
+Modified: 1.0 1.0 0.5 0.5 1.0 1.0 
+PASS
+
+Using one for loop
+Original: 1.0 1.0 0.0 0.0 1.0 1.0 
+Modified: 1.0 1.0 0.5 0.5 1.0 1.0 
+PASS
+
+Using one for loop
+Original: 1.0 1.0 0.0 0.0 1.0 1.0 
+Modified: 1.0 1.0 0.5 0.5 1.0 1.0 
+PASS
+
+Using vectorization
+Original: 1.0 1.0 0.0 0.0 1.0 1.0 
+Modified: 1.0 1.0 0.5 0.5 1.0 1.0 
+PASS
+
+Test 3
+Using two for loops
+Original: 0.0 1.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 1.0 0.0 
+Modified: 0.5 1.0 0.5 1.0 0.5 0.0 0.5 1.0 0.5 1.0 0.5 
+PASS
+
+Using one for loop
+Original: 0.0 1.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 1.0 0.0 
+Modified: 0.5 1.0 0.5 1.0 0.5 0.0 0.5 1.0 0.5 1.0 0.5 
+PASS
+
+Using one for loop
+Original: 0.0 1.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 1.0 0.0 
+Modified: 0.5 1.0 0.5 1.0 0.5 0.0 0.5 1.0 0.5 1.0 0.5 
+PASS
+
+Using vectorization
+Original: 0.0 1.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 1.0 0.0 
+Modified: 0.5 1.0 0.5 1.0 0.5 0.0 0.5 1.0 0.5 1.0 0.5 
+PASS
+
+Test 3
+Using two for loops
+Original: 0.0 0.0 1.0 1.0 0.0 0.0 
+Modified: 0.0 0.5 1.0 1.0 0.5 0.0 
+PASS
+
+Using one for loop
+Original: 0.0 0.0 1.0 1.0 0.0 0.0 
+Modified: 0.0 0.5 1.0 1.0 0.5 0.0 
+PASS
+
+Using one for loop
+Original: 0.0 0.0 1.0 1.0 0.0 0.0 
+Modified: 0.0 0.5 1.0 1.0 0.5 0.0 
+PASS
+
+Using vectorization
+Original: 0.0 0.0 1.0 1.0 0.0 0.0 
+Modified: 0.0 0.5 1.0 1.0 0.5 0.0 
+PASS
+
