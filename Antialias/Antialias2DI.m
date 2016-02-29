@@ -1,5 +1,6 @@
 clear;
 n = 16;
+C = [0,0,0;0.5,0.5,0.5;1,1,1];
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create circle with pixels.
@@ -12,11 +13,10 @@ for i = [1:n]
         end
     end
 end
-C = [0,0,0;0.5,0.5,0.5;1,1,1];
 
-figure(1);clf;hold on;axis square;
-ih = imagesc(M);
-colormap(C);
+figure(1);clf;
+  imagesc(M);
+  colormap(C);
 
 saveplots('Antialias2DI_before.png',n)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,9 +47,9 @@ for i = [1:n]
     end
 end
 
-figure(2);clf;hold on;axis square;
-imagesc(M);
-colormap(C);
+figure(2);clf;
+  imagesc(M);
+  colormap(C);
 
 saveplots('Antialias2DI_after.png',n)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

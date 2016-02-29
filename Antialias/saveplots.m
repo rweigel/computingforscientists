@@ -1,5 +1,7 @@
 function saveplots(fname,n)
 
+axis square;
+hold on;
 box on;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
