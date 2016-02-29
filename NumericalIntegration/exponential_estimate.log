@@ -1,0 +1,2779 @@
+Rectangle method n = 2; long-hand:   A = 0.03
+Rectangle method n = 2; vectorized:  A = 0.29
+Rectangle method n = 4; long-hand:   A = 0.05
+Rectangle method n = 4; vectorized:  A = 0.38
+Trapezoid method n = 2; vectorized:  A = 0.64
+Trapezoid method n = 2; long-hand:   A = 0.64
+Trapezoid method n = 4; vectorized:  A = 0.53
+Trapezoid method n = 4; long-hand:   A = 0.53
+Trapezoid method n = 8; vectorized:  A = 0.50
+Trapezoid method n = 8; long-hand:   A = 0.50
+Simpson's method n = 2; long-hand:  A = 0.49
+Simpson's method n = 2; for loop:   A = 0.49
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 2; vectorized: A = 0.49
+Simpson's method n = 4; long-hand:  A = 0.49
+Simpson's method n = 4; for loop:   A = 2.00
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Simpson's method n = 4; vectorizes: A = 0.49
+Rectangle method n = 2; long-hand:   A = 0.03
+Rectangle method n = 2; vectorized:  A = 0.29
+Rectangle method n = 4; long-hand:   A = 0.05
+Rectangle method n = 4; vectorized:  A = 0.38
+
+Trapezoid method n = 2; vectorized:  A = 0.64
+Trapezoid method n = 2; long-hand:   A = 0.64
+Trapezoid method n = 4; vectorized:  A = 0.53
+Trapezoid method n = 4; long-hand:   A = 0.53
+Trapezoid method n = 8; vectorized:  A = 0.50
+Trapezoid method n = 8; long-hand:   A = 0.50
+
+Simpson's method n = 2; long-hand:  A = 0.49
+Simpson's method n = 2; for loop:   A = 0.49
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 2; vectorized: A = 0.49
+Simpson's method n = 4; long-hand:  A = 0.49
+Simpson's method n = 4; for loop:   A = 2.00
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Simpson's method n = 4; vectorizes: A = 0.49
+Rectangle method n = 2; long-hand:   A = 0.03
+Rectangle method n = 2; vectorized:  A = 0.29
+Rectangle method n = 4; long-hand:   A = 0.05
+Rectangle method n = 4; vectorized:  A = 0.38
+
+Trapezoid method n = 2; vectorized:  A = 0.64
+Trapezoid method n = 2; long-hand:   A = 0.64
+Trapezoid method n = 4; vectorized:  A = 0.53
+Trapezoid method n = 4; long-hand:   A = 0.53
+Trapezoid method n = 8; vectorized:  A = 0.50
+Trapezoid method n = 8; long-hand:   A = 0.50
+
+Simpson's method n = 2; long-hand:  A = 0.49
+Simpson's method n = 2; for loop:   A = 0.49
+Simpson's method n = 2; vectorized: A = 0.49
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.49
+Simpson's method n = 4; for loop:   A = 2.00
+Simpson's method n = 4; vectorized: A = 0.49
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:   A = 0.03
+Rectangle method n = 2; vectorized:  A = 0.29
+Rectangle method n = 4; long-hand:   A = 0.05
+Rectangle method n = 4; vectorized:  A = 0.38
+
+Trapezoid method n = 2; vectorized:  A = 0.64
+Trapezoid method n = 2; long-hand:   A = 0.64
+Trapezoid method n = 4; vectorized:  A = 0.53
+Trapezoid method n = 4; long-hand:   A = 0.53
+
+Simpson's method n = 2; long-hand:  A = 0.49
+Simpson's method n = 2; for loop:   A = 0.49
+Simpson's method n = 2; vectorized: A = 0.49
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.49
+Simpson's method n = 4; for loop:   A = 2.00
+Simpson's method n = 4; vectorized: A = 0.49
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.03
+Rectangle method n = 2; vectorized: A = 0.29
+Rectangle method n = 4; long-hand:  A = 0.05
+Rectangle method n = 4; vectorized: A = 0.38
+
+Trapezoid method n = 2; vectorized: A = 0.64
+Trapezoid method n = 2; long-hand:  A = 0.64
+Trapezoid method n = 4; vectorized: A = 0.53
+Trapezoid method n = 4; long-hand:  A = 0.53
+
+Simpson's method n = 2; long-hand:  A = 0.49
+Simpson's method n = 2; for loop:   A = 0.49
+Simpson's method n = 2; vectorized: A = 0.49
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.49
+Simpson's method n = 4; for loop:   A = 2.00
+Simpson's method n = 4; vectorized: A = 0.49
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.0341
+Rectangle method n = 2; vectorized: A = 0.2857
+Rectangle method n = 4; long-hand:  A = 0.0451
+Rectangle method n = 4; vectorized: A = 0.3783
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.4933
+Simpson's method n = 2; for loop:   A = 0.4933
+Simpson's method n = 2; vectorized: A = 0.4933
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.4910
+Simpson's method n = 4; for loop:   A = 2.0041
+Simpson's method n = 4; vectorized: A = 0.4910
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+{Attempted to access y(2); index out of bounds because numel(y)=1.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 13)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',13,0)">line 13</a>)
+A(1) = w*(y(1) + y(2));
+} 
+n(1)
+
+ans =
+
+     1
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.0080
+Rectangle method n = 2; vectorized: A = 0.0080
+Rectangle method n = 4; long-hand:  A = 0.0106
+{Undefined function or variable 'breal'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 24)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',24,0)">line 24</a>)
+breal
+} 
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.0080
+Rectangle method n = 2; vectorized: A = 0.0080
+Rectangle method n = 4; long-hand:  A = 0.0106
+Rectangle method n = 4; vectorized: A = 0.0106
+x  = linspace(0,4,n(1));
+x
+
+x =
+
+     0     4
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 1.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.7857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+{Attempted to access y(4); index out of bounds because numel(y)=3.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 117)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',117,0)">line 117</a>)
+A(1) = (h/3)*(y(1) + 4*y(2) + 2*y(3) + 4*y(4) + y(5));
+} 
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 1.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.7857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+{Attempted to access y(6); index out of bounds because numel(y)=5.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 150)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',150,0)">line 150</a>)
+A(3) = (h/3)*(y(1) + 4*y(2) + 2*y(3) + 4*y(4) + 2*y(5) + 4*y(6) + 2*y(7) + 4*y(8) + y(9));
+} 
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 1.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.7857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.1770
+Simpson's method n = 4; for loop:   A = 0.1770
+Simpson's method n = 4; vectorized: A = 0.2455
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('semilogy')" style="font-weight:bold">semilogy</a>
+Vectors must be the same length.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 195)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',195,0)">line 195</a>)
+semilogy(n2,abs(errR)*100/E,'r.','MarkerSize',20);
+} 
+whos n2
+  Name      Size            Bytes  Class     Attributes
+
+  n2        1x8                64  double              
+
+whos errR
+  Name      Size            Bytes  Class     Attributes
+
+  errR      1x9                72  double              
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 1.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.7857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.1770
+Simpson's method n = 4; for loop:   A = 0.1770
+Simpson's method n = 4; vectorized: A = 0.2455
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 1.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.7857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.1770
+Simpson's method n = 4; for loop:   A = 0.1770
+Simpson's method n = 4; vectorized: A = 0.2455
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 1.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.7857
+x
+
+x =
+
+     0     1     2     3     4
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.1770
+Simpson's method n = 4; for loop:   A = 0.1770
+Simpson's method n = 4; vectorized: A = 0.2455
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.1770
+Simpson's method n = 4; for loop:   A = 0.1770
+Simpson's method n = 4; vectorized: A = 0.2455
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+A
+
+A =
+
+  Columns 1 through 4
+
+   0.153650922125347   0.285658715832327   0.378315158392983   0.432040718643911
+
+  Columns 5 through 8
+
+   0.460803495318570   0.475663131367585   0.483212715673235   0.487017462189136
+
+ErrR
+{Undefined function or variable 'ErrR'.
+} 
+errR
+
+errR =
+
+  Columns 1 through 4
+
+  -0.337191258430286  -0.205183464723306  -0.112527022162649  -0.058801461911721
+
+  Columns 5 through 8
+
+  -0.030038685237063  -0.015179049188048  -0.007629464882398  -0.003824718366496
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.1770
+Simpson's method n = 4; for loop:   A = 0.1770
+Simpson's method n = 4; vectorized: A = 0.2455
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.0039
+Simpson's method n = 2; for loop:   A = 0.0039
+Simpson's method n = 2; vectorized: A = 0.0039
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.0028
+Simpson's method n = 4; for loop:   A = 0.0028
+Simpson's method n = 4; vectorized: A = 0.0077
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.0039
+Simpson's method n = 2; for loop:   A = 0.0028
+Simpson's method n = 2; vectorized: A = 0.0039
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+x
+
+x =
+
+     0     1     2     3     4
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.0039
+Simpson's method n = 2; for loop:   A = 0.0039
+Simpson's method n = 2; vectorized: A = 0.0039
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.0039
+Simpson's method n = 2; for loop:   A = 0.0039
+Simpson's method n = 2; vectorized: A = 0.0039
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.0000
+Simpson's method n = 4; for loop:   A = 0.0000
+Simpson's method n = 4; vectorized: A = 0.0077
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.0039
+Simpson's method n = 2; for loop:   A = 0.0039
+Simpson's method n = 2; vectorized: A = 0.0039
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.0000
+Simpson's method n = 4; for loop:   A = 0.0052
+Simpson's method n = 4; vectorized: A = 0.0077
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.0039
+Simpson's method n = 2; for loop:   A = 0.0039
+Simpson's method n = 2; vectorized: A = 0.0039
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.0000
+Simpson's method n = 4; for loop:   A = 0.0077
+Simpson's method n = 4; vectorized: A = 0.0077
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.0000
+Simpson's method n = 4; for loop:   A = 0.2455
+Simpson's method n = 4; vectorized: A = 0.2455
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.2455
+Simpson's method n = 4; for loop:   A = 0.2455
+Simpson's method n = 4; vectorized: A = 0.2455
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.2455
+Simpson's method n = 4; for loop:   A = 0.2455
+
+A
+
+A =
+
+   0.246637686959932   0.245503834669571
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.2455
+Simpson's method n = 4; for loop:   A = 0.2455
+Simpson's method n = 4; vectorized: A = 0.2455
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 0.2455
+Simpson's method n = 4; for loop:   A = 0.2455
+Simpson's method n = 4; vectorized: A = 0.2455
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.1537
+Rectangle method n = 2; vectorized: A = 0.1537
+Rectangle method n = 4; long-hand:  A = 0.2857
+Rectangle method n = 4; vectorized: A = 0.2857
+
+Trapezoid method n = 2; vectorized: A = 0.6445
+Trapezoid method n = 2; long-hand:  A = 0.6445
+Trapezoid method n = 4; vectorized: A = 0.5311
+Trapezoid method n = 4; long-hand:  A = 0.5311
+
+Simpson's method n = 2; long-hand:  A = 0.2466
+Simpson's method n = 2; for loop:   A = 0.2466
+Simpson's method n = 2; vectorized: A = 0.2466
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+length(y)
+
+ans =
+
+     5
+
+x
+
+x =
+
+     0     1     2     3     4
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 0.9866
+Simpson's method n = 2; for loop:   A = 0.9866
+Simpson's method n = 2; vectorized: A = 0.9866
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 0.9866
+Simpson's method n = 2; for loop:   A = 0.9866
+Simpson's method n = 2; vectorized: A = 0.9866
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 0.9866
+Simpson's method n = 2; for loop:   A = 0.9866
+Simpson's method n = 2; vectorized: A = 0.9866
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+w
+
+w =
+
+     1
+
+x
+
+x =
+
+     0     1     2     3
+
+n(1)
+
+ans =
+
+     2
+
+x
+
+x =
+
+     0     1     2     3
+
+exponential_estimate
+{Attempted to access x(2); index out of bounds because numel(x)=0.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 14)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',14,0)">line 14</a>)
+w  = x(2)-x(1);
+} 
+x
+
+x =
+
+   Empty matrix: 1-by-0
+
+exponential_estimate
+{Attempted to access x(2); index out of bounds because numel(x)=1.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 14)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',14,0)">line 14</a>)
+w  = x(2)-x(1);
+} 
+x
+
+x =
+
+     0
+
+n(1)
+
+ans =
+
+     2
+
+linspace(0,4,2)
+
+ans =
+
+     0     4
+
+exponential_estimate
+{Attempted to access x(2); index out of bounds because numel(x)=1.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 14)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',14,0)">line 14</a>)
+w  = x(2)-x(1);
+} 
+exponential_estimate
+{Attempted to access x(2); index out of bounds because numel(x)=1.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 14)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',14,0)">line 14</a>)
+w  = x(2)-x(1);
+} 
+linspace(0,3,2)
+
+ans =
+
+     0     3
+
+exponential_estimate
+{Undefined function or variable 'dw'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 13)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',13,0)">line 13</a>)
+x  = [0:dw:4];
+} 
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 4.6146
+x
+
+x =
+
+     0     2     4
+
+w
+
+w =
+
+     2
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 4.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 3.1426
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+A(1:2)
+
+ans =
+
+   2.577972410723919   2.124319224440572
+
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+{Attempted to access y(4); index out of bounds because numel(y)=3.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 119)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',119,0)">line 119</a>)
+A(1) = (h/3)*(y(1) + 4*y(2) + 2*y(3) + 4*y(4) + y(5));
+} 
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 1.9731
+Simpson's method n = 2; for loop:   A = 1.9731
+Simpson's method n = 2; vectorized: A = 1.9731
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 1.9640
+Simpson's method n = 4; for loop:   A = 1.9640
+Simpson's method n = 4; vectorized: A = 1.9640
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 1.9731
+Simpson's method n = 2; for loop:   A = 1.9731
+Simpson's method n = 2; vectorized: A = 1.9731
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 1.9640
+Simpson's method n = 4; for loop:   A = 1.9640
+Simpson's method n = 4; vectorized: A = 1.9640
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.axis.Axes/set')" style="font-weight:bold">matlab.graphics.axis.Axes/set</a>
+While setting the 'YLim' property of <a href="matlab:doc matlab.graphics.axis.Axes">Axes</a>:
+Value must be a 1x2 vector of numeric type in which the second
+element is larger than the first and may be Inf
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 212)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',212,0)">line 212</a>)
+set(gca,'YLim',[1e-3 1e-9])
+} 
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 1.9731
+Simpson's method n = 2; for loop:   A = 1.9731
+Simpson's method n = 2; vectorized: A = 1.9731
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 1.9640
+Simpson's method n = 4; for loop:   A = 1.9640
+Simpson's method n = 4; vectorized: A = 1.9640
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 1.9731
+Simpson's method n = 2; for loop:   A = 1.9731
+Simpson's method n = 2; vectorized: A = 1.9731
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 1.9640
+Simpson's method n = 4; for loop:   A = 1.9640
+Simpson's method n = 4; vectorized: A = 1.9640
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.axis.Axes/set')" style="font-weight:bold">matlab.graphics.axis.Axes/set</a>
+While setting the 'YLim' property of <a href="matlab:doc matlab.graphics.axis.Axes">Axes</a>:
+Value must be a 1x2 vector of numeric type in which the second
+element is larger than the first and may be Inf
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exponential_estimate', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m', 212)" style="font-weight:bold">exponential_estimate</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/exponential_estimate.m',212,0)">line 212</a>)
+set(gca,'YLim',[1e-3 1e-9])
+} 
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 1.9731
+Simpson's method n = 2; for loop:   A = 1.9731
+Simpson's method n = 2; vectorized: A = 1.9731
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 1.9640
+Simpson's method n = 4; for loop:   A = 1.9640
+Simpson's method n = 4; vectorized: A = 1.9640
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 1.9731
+Simpson's method n = 2; for loop:   A = 1.9731
+Simpson's method n = 2; vectorized: A = 1.9731
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 1.9640
+Simpson's method n = 4; for loop:   A = 1.9640
+Simpson's method n = 4; vectorized: A = 1.9640
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 1.9731
+Simpson's method n = 2; for loop:   A = 1.9731
+Simpson's method n = 2; vectorized: A = 1.9731
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 1.9640
+Simpson's method n = 4; for loop:   A = 1.9640
+Simpson's method n = 4; vectorized: A = 1.9640
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+rectangleplot
+Wrote rectangleplot_exponential_4.png
+Wrote rectangleplot_exponential_4.pdf
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+!rm triangleplot.m
+trapezoidplot
+Wrote trapezoidplot_showparts_exponential_2.png
+Wrote trapezoidplot_showparts_exponential_2.pdf
+Wrote trapezoidplot_showparts_exponential_4.png
+Wrote trapezoidplot_showparts_exponential_4.pdf
+Wrote trapezoidplot_exponential_2.png
+Wrote trapezoidplot_exponential_2.pdf
+Wrote trapezoidplot_exponential_4.png
+Wrote trapezoidplot_exponential_4.pdf
+Wrote trapezoidplot_showparts_linear_2.png
+Wrote trapezoidplot_showparts_linear_2.pdf
+Wrote trapezoidplot_showparts_linear_4.png
+Wrote trapezoidplot_showparts_linear_4.pdf
+Wrote trapezoidplot_linear_2.png
+Wrote trapezoidplot_linear_2.pdf
+Wrote trapezoidplot_linear_4.png
+Wrote trapezoidplot_linear_4.pdf
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 1.9731
+Simpson's method n = 2; for loop:   A = 1.9731
+Simpson's method n = 2; vectorized: A = 1.9731
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 1.9640
+Simpson's method n = 4; for loop:   A = 1.9640
+Simpson's method n = 4; vectorized: A = 1.9640
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+simpsonsplot
+
+type =
+
+exponential
+
+
+b =
+
+    23
+
+
+b =
+
+    45
+
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 1.9731
+Simpson's method n = 2; for loop:   A = 1.9731
+Simpson's method n = 2; vectorized: A = 1.9731
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 1.9640
+Simpson's method n = 4; for loop:   A = 1.9640
+Simpson's method n = 4; vectorized: A = 1.9640
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+simpsonsplot
+
+type =
+
+exponential
+
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+simpsonsplot
+
+type =
+
+exponential
+
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+
+x
+
+x =
+
+     0     1     2     3     4
+
+h
+
+h =
+
+     1
+
+simpsonsplot
+
+type =
+
+exponential
+
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+simpsonsplot
+
+type =
+
+exponential
+
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 1.9731
+Simpson's method n = 2; for loop:   A = 1.9731
+Simpson's method n = 2; vectorized: A = 1.9731
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 1.9640
+Simpson's method n = 4; for loop:   A = 1.9640
+Simpson's method n = 4; vectorized: A = 1.9640
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
+simpsonsplot
+{Error: <a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',61,93)">File: simpsonsplot.m Line: 61 Column: 93
+</a>Unbalanced or unexpected parenthesis or bracket.
+} 
+simpsonsplot
+{Error: <a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',62,52)">File: simpsonsplot.m Line: 62 Column: 52
+</a>Unbalanced or unexpected parenthesis or bracket.
+} 
+simpsonsplot
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('patch')" style="font-weight:bold">patch</a>
+Vectors must be the same length.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 63)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',63,0)">line 63</a>)
+        p =
+        patch([x(i),x(i+2),x(i+2),fliplr(xq)],[0,0,fliplr(yq)],'g');
+        
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)
+    simpsonsplot('exponential', 2)
+} 
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+[Warning: Error updating Legend.
+
+ Operation terminated by user
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('defaulterrorcallback', '/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/defaulterrorcallback.m', 12)" style="font-weight:bold">defaulterrorcallback</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/defaulterrorcallback.m',12,0)">line 12</a>)
+  In alternatePrintPath>LocalSetPaintDisabled (line 1135)
+  In alternatePrintPath>printCleanup (line 331)
+  In alternatePrintPath>@()printCleanup(pj,pt) (line 101)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('onCleanup/delete', '/Applications/MATLAB_R2015a.app/toolbox/matlab/general/onCleanup.m', 60)" style="font-weight:bold">onCleanup/delete</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2015a.app/toolbox/matlab/general/onCleanup.m',60,0)">line 60</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print', '/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m', 215)" style="font-weight:bold">print</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m',215,0)">line 215</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 71)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',71,0)">line 71</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 8)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',8,0)">line 8</a>)] 
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+{Operation terminated by user during findall (line 41)
+
+
+In matlab.graphics.illustration.Legend/doMethod>set_contextmenu
+(line 658)
+
+
+
+In matlab.graphics.illustration.Legend/doMethod (line 8)
+
+
+
+In matlab.graphics.illustration.Legend/doSetup (line 53)
+
+
+
+In matlab.graphics.illustration.Legend (line 3482)
+
+
+
+In legendHGUsingMATLABClasses>make_legend (line 280)
+
+
+
+In legendHGUsingMATLABClasses (line 241)
+
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2015a.app/toolbox/matlab/scribe/legend.p', 118)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2015a.app/toolbox/matlab/scribe/legend.p',118,0)">line 118</a>)
+        [varargout{1:nargout}] =
+        legendHGUsingMATLABClasses(varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 47)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',47,0)">line 47</a>)
+    lh = legend(sprintf(' %s',eqnl),'Location','NorthWest');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 9)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',9,0)">line 9</a>)
+    simpsonsplot('linear', 4)
+} 
+simpsonsplot
+xq
+
+xq =
+
+     0
+
+x(1)
+
+ans =
+
+     0
+
+x(2)
+
+ans =
+
+     1
+
+simpsonsplot
+simpsonsplot
+simpsonsplot
+simpsonsplot
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+
+a =
+
+     1
+
+
+b =
+
+   0.062500000000000
+
+
+a =
+
+   1.250000000000000
+
+
+b =
+
+   0.062500000000000
+
+
+a =
+
+   1.500000000000000
+
+
+b =
+
+   0.062500000000000
+
+
+a =
+
+   1.750000000000000
+
+
+b =
+
+   0.062500000000000
+
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+
+a =
+
+     1
+
+
+b =
+
+   0.062500000000000
+
+
+c =
+
+     0
+
+
+a =
+
+   1.250000000000000
+
+
+b =
+
+   0.062500000000000
+
+
+c =
+
+     0
+
+
+a =
+
+   1.500000000000000
+
+
+b =
+
+   0.062500000000000
+
+
+c =
+
+     0
+
+
+a =
+
+   1.750000000000000
+
+
+b =
+
+   0.062500000000000
+
+
+c =
+
+     0
+
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+{Error: <a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',5,5)">File: simpsonsplot.m Line: 5 Column: 5
+</a>A BREAK statement appeared outside of a loop. Use RETURN instead.
+} 
+simpsonsplot
+{Undefined function or variable "eqn".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 19)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',19,0)">line 19</a>)
+y  = eval(eqn);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)
+    simpsonsplot('linear', 2)
+} 
+simpsonsplot
+{Undefined function or variable "y".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 34)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',34,0)">line 34</a>)
+        Ae(k) = y(i+2)-y(i) + (y(i+2)-y(i))/(4*2);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)
+    simpsonsplot('linear', 2)
+} 
+simpsonsplot
+{Undefined function or variable "k".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 35)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',35,0)">line 35</a>)
+        Ae(k) = y(i+2)-y(i) + (y(i+2)-y(i))/(4*2);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)
+    simpsonsplot('linear', 2)
+} 
+simpsonsplot
+{Attempted to access Ae(0); index must be a positive integer or logical.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 37)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',37,0)">line 37</a>)
+        Ae(k) = y(i+2)-y(i) + (y(i+2)-y(i))/(4*2);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)
+    simpsonsplot('linear', 2)
+} 
+simpsonsplot
+{Undefined function or variable "dA".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 48)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',48,0)">line 48</a>)
+    dA(k) = A(k) - dA(k)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)
+    simpsonsplot('linear', 2)
+} 
+simpsonsplot
+
+dA =
+
+   1.937500000000000
+
+
+dA =
+
+   1.937500000000000   2.937500000000000
+
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 64)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',64,0)">line 64</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)] 
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 64)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',64,0)">line 64</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)] 
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+simpsonsplot
+
+dA =
+
+   1.937500000000000
+
+
+dA =
+
+   1.937500000000000   2.937500000000000
+
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+simpsonsplot
+
+dA =
+
+   1.843750000000000
+
+
+dA =
+
+   1.843750000000000   2.781250000000000
+
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+simpsonsplot
+
+dA =
+
+   1.843750000000000
+
+
+dA =
+
+   1.843750000000000   2.781250000000000
+
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+simpsonsplot
+
+dA =
+
+   1.843750000000000
+
+
+dA =
+
+   1.843750000000000   2.781250000000000
+
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+simpsonsplot
+
+dA =
+
+     0
+
+
+dA =
+
+     0     0
+
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+x
+
+x =
+
+  Columns 1 through 4
+
+                   0   0.500000000000000   1.000000000000000   1.500000000000000
+
+  Columns 5 through 8
+
+   2.000000000000000   2.500000000000000   3.000000000000000   3.500000000000000
+
+  Column 9
+
+   4.000000000000000
+
+simpsonsplot
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+simpsonsplot
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+simpsonsplot
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+simpsonsplot
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+simpsonsplot
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+simpsonsplot
+{Undefined function or variable "Ae".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 46)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',46,0)">line 46</a>)
+    dA(k) = A(k) - Ae(k);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)
+    simpsonsplot('exponential', 2)
+} 
+simpsonsplot
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+{Undefined function or variable "Ae".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 46)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',46,0)">line 46</a>)
+    dA(k) = A(k) - Ae(k);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 8)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',8,0)">line 8</a>)
+    simpsonsplot('exponential', 2)
+} 
+simpsonsplot
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+simpsonsplot
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 68)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',68,0)">line 68</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)] 
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 68)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',68,0)">line 68</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)] 
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 68)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',68,0)">line 68</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 5)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',5,0)">line 5</a>)] 
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 68)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',68,0)">line 68</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 5)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',5,0)">line 5</a>)] 
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 68)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',68,0)">line 68</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 5)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',5,0)">line 5</a>)] 
+[Warning: Control Character '\D' is not valid. See 'doc sprintf' for control
+characters valid in the format string.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 68)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',68,0)">line 68</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 5)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',5,0)">line 5</a>)] 
+Wrote simpsonsplot_exponential_4.png
+{Operation terminated by user during findall (line 41)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('adjustbackground', '/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/private/adjustbackground.p', 227)" style="font-weight:bold">adjustbackground</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/private/adjustbackground.p',227,0)">line 227</a>)
+        thisBaselineParent = findall(a,'-property', 'BaseLine', 'ShowBaseline',
+        'on');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('modifyColorsForPrint', '/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/private/modifyColorsForPrint.m', 70)" style="font-weight:bold">modifyColorsForPrint</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/private/modifyColorsForPrint.m',70,0)">line 70</a>)
+                adjustbackground('save', h);
+
+In alternatePrintPath>LocalInvertColorsIfNeeded (line 1374)
+
+
+
+In alternatePrintPath>LocalSetupContentChanges (line 1567)
+
+
+
+In alternatePrintPath>printSetup (line 175)
+
+
+
+In alternatePrintPath (line 97)
+
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print', '/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m', 215)" style="font-weight:bold">print</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m',215,0)">line 215</a>)
+    pj = alternatePrintPath(pj);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 90)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',90,0)">line 90</a>)
+    print('-dpdf',strrep('.png','.pdf',fname));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 5)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',5,0)">line 5</a>)
+    simpsonsplot('exponential', 4)
+} 
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+th
+
+th = 
+
+  <a href="matlab:helpPopup matlab.graphics.primitive.Text" style="font-weight:bold">Text</a> (Sums: Area = 1.9731; \Delta A = 0.0097) with properties:
+
+                 String: 'Sums: Area = 1.9731; \Delta A = 0.0097'
+               FontSize: 11
+             FontWeight: 'bold'
+               FontName: 'Helvetica'
+                  Color: [0 0 0]
+    HorizontalAlignment: 'center'
+               Position: [2.000002635709308 2.124941765097685 0]
+                  Units: 'data'
+
+  Show <a href="matlab:if exist('th', 'var'), matlab.graphics.internal.getForDisplay('th', th, 'matlab.graphics.primitive.Text'), else, matlab.graphics.internal.getForDisplay('th'), end">all properties</a>
+
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+{Operation terminated by user during
+alternatePrintPath>LocalCallgenerateGraphicsOutput (line 779)
+
+
+In alternatePrintPath>LocalGenerateRasterOutput (line 862)
+
+
+
+In alternatePrintPath>LocalGenerateFileOutput (line 646)
+
+
+
+In alternatePrintPath (line 106)
+
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print', '/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m', 215)" style="font-weight:bold">print</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m',215,0)">line 215</a>)
+    pj = alternatePrintPath(pj);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 89)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',89,0)">line 89</a>)
+    print('-dpng','-r300',fname);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 11)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',11,0)">line 11</a>)
+    simpsonsplot('linear', 4)
+} 
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+xl = get(gca,'XTickLabels')
+[Warning: The XTickLabels property will be removed in a future release.] 
+
+xl = 
+
+    '0'
+    '0.5'
+    '1'
+    '1.5'
+    '2'
+    '2.5'
+    '3'
+    '3.5'
+    '4'
+
+whos xl
+  Name      Size            Bytes  Class    Attributes
+
+  xl        9x1              1042  cell               
+
+simpsonsplot
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 89)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',89,0)">line 89</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)] 
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 89)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',89,0)">line 89</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 5)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',5,0)">line 5</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 5)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',5,0)">line 5</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 5)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',5,0)">line 5</a>)] 
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 89)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',89,0)">line 89</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 6)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',6,0)">line 6</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 6)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',6,0)">line 6</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 6)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',6,0)">line 6</a>)] 
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 89)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',89,0)">line 89</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 7)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',7,0)">line 7</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 7)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',7,0)">line 7</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 7)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',7,0)">line 7</a>)] 
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 89)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',89,0)">line 89</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 8)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',8,0)">line 8</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 8)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',8,0)">line 8</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 8)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',8,0)">line 8</a>)] 
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 89)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',89,0)">line 89</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 9)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',9,0)">line 9</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 9)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',9,0)">line 9</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 9)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',9,0)">line 9</a>)] 
+{Operation terminated by user during alternatePrintPath (line 106)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print', '/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m', 215)" style="font-weight:bold">print</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m',215,0)">line 215</a>)
+    pj = alternatePrintPath(pj);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 94)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',94,0)">line 94</a>)
+    print('-dpng','-r300',fname);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 9)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',9,0)">line 9</a>)
+    simpsonsplot('linear', 4)
+} 
+xl
+
+xl = 
+
+    '0'
+    '0.5'
+    '1'
+    '1.5'
+    '2'
+    '2.5'
+    '3'
+    '3.5'
+    '4'
+
+xl = get(gca,'XTickLabel');
+    for i = 1:length(xl)
+        xl{i} = sprintf('%.2f',str2num(xl{i}));
+    end
+xl
+
+xl = 
+
+    '0.00'
+    '0.50'
+    '1.00'
+    '1.50'
+    '2.00'
+    '2.50'
+    '3.00'
+    '3.50'
+    '4.00'
+
+simpsonsplot
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)] 
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 5)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',5,0)">line 5</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 5)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',5,0)">line 5</a>)] 
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 6)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',6,0)">line 6</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 6)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',6,0)">line 6</a>)] 
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 7)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',7,0)">line 7</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 7)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',7,0)">line 7</a>)] 
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 8)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',8,0)">line 8</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 8)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',8,0)">line 8</a>)] 
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 9)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',9,0)">line 9</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 9)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',9,0)">line 9</a>)] 
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 10)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',10,0)">line 10</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 10)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',10,0)">line 10</a>)] 
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 11)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',11,0)">line 11</a>)] 
+[Warning: The XTickLabels property will be removed in a future release.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 11)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',11,0)">line 11</a>)] 
+{Operation terminated by user during
+alternatePrintPath>LocalCallgenerateGraphicsOutput (line 779)
+
+
+In alternatePrintPath>LocalGenerateRasterOutput (line 862)
+
+
+
+In alternatePrintPath>LocalGenerateFileOutput (line 646)
+
+
+
+In alternatePrintPath (line 106)
+
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print', '/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m', 215)" style="font-weight:bold">print</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m',215,0)">line 215</a>)
+    pj = alternatePrintPath(pj);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 94)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',94,0)">line 94</a>)
+    print('-dpng','-r300',fname);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 11)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',11,0)">line 11</a>)
+    simpsonsplot('linear', 4)
+} 
+simpsonsplot
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.axis.Axes/set')" style="font-weight:bold">matlab.graphics.axis.Axes/set</a>
+There is no YTickLabes property on the Axes class.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 93)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',93,0)">line 93</a>)
+    set(gca,'YTickLabes',xl);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 4)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',4,0)">line 4</a>)
+    simpsonsplot('exponential', 2)
+} 
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+get(gca)
+                       ALim: [0 1]
+                   ALimMode: 'auto'
+     ActivePositionProperty: 'outerposition'
+          AmbientLightColor: [1 1 1]
+               BeingDeleted: 'off'
+                        Box: 'on'
+                   BoxStyle: 'back'
+                 BusyAction: 'queue'
+              ButtonDownFcn: ''
+                       CLim: [0 1]
+                   CLimMode: 'auto'
+             CameraPosition: [1x3 double]
+         CameraPositionMode: 'auto'
+               CameraTarget: [2.000000000000000 0.930000000000000 0]
+           CameraTargetMode: 'auto'
+             CameraUpVector: [0 1 0]
+         CameraUpVectorMode: 'auto'
+            CameraViewAngle: 6.608610360311924
+        CameraViewAngleMode: 'auto'
+                   Children: [12x1 Graphics]
+                   Clipping: 'on'
+              ClippingStyle: '3dbox'
+                      Color: [1 1 1]
+                 ColorOrder: [7x3 double]
+            ColorOrderIndex: 1
+                  CreateFcn: ''
+               CurrentPoint: [2x3 double]
+            DataAspectRatio: [2.100000000000000 1.170000000000000 1]
+        DataAspectRatioMode: 'auto'
+                  DeleteFcn: ''
+                  FontAngle: 'normal'
+                   FontName: 'Helvetica'
+                   FontSize: 14
+              FontSmoothing: 'on'
+                  FontUnits: 'points'
+                 FontWeight: 'normal'
+                  GridAlpha: 0.150000000000000
+              GridAlphaMode: 'auto'
+                  GridColor: [1x3 double]
+              GridColorMode: 'auto'
+              GridLineStyle: '-'
+           HandleVisibility: 'on'
+                    HitTest: 'on'
+              Interruptible: 'on'
+    LabelFontSizeMultiplier: 1.100000000000000
+                      Layer: 'bottom'
+             LineStyleOrder: '-'
+        LineStyleOrderIndex: 1
+                  LineWidth: 0.500000000000000
+             MinorGridAlpha: 0.250000000000000
+         MinorGridAlphaMode: 'auto'
+             MinorGridColor: [1x3 double]
+         MinorGridColorMode: 'auto'
+         MinorGridLineStyle: ':'
+                   NextPlot: 'add'
+              OuterPosition: [0 0 1 1]
+                     Parent: [1x1 Figure]
+              PickableParts: 'visible'
+         PlotBoxAspectRatio: [1 0.533195009711853 0.533195009711853]
+     PlotBoxAspectRatioMode: 'auto'
+                   Position: [1x4 double]
+                 Projection: 'orthographic'
+                   Selected: 'off'
+         SelectionHighlight: 'on'
+                 SortMethod: 'childorder'
+                        Tag: ''
+                    TickDir: 'in'
+                TickDirMode: 'auto'
+       TickLabelInterpreter: 'tex'
+                 TickLength: [0.010000000000000 0.025000000000000]
+                 TightInset: [1x4 double]
+                      Title: [1x1 Text]
+    TitleFontSizeMultiplier: 1.100000000000000
+            TitleFontWeight: 'bold'
+                       Type: 'axes'
+              UIContextMenu: []
+                      Units: 'normalized'
+                   UserData: []
+                       View: [0 90]
+                    Visible: 'on'
+              XAxisLocation: 'bottom'
+                     XColor: [1x3 double]
+                 XColorMode: 'auto'
+                       XDir: 'normal'
+                      XGrid: 'on'
+                     XLabel: [1x1 Text]
+                       XLim: [-0.100000000000000 4.100000000000000]
+                   XLimMode: 'manual'
+                 XMinorGrid: 'off'
+                 XMinorTick: 'off'
+                     XScale: 'linear'
+                      XTick: [1x9 double]
+                 XTickLabel: {9x1 cell}
+             XTickLabelMode: 'auto'
+         XTickLabelRotation: 0
+                  XTickMode: 'manual'
+              YAxisLocation: 'left'
+                     YColor: [1x3 double]
+                 YColorMode: 'auto'
+                       YDir: 'normal'
+                      YGrid: 'on'
+                     YLabel: [1x1 Text]
+                       YLim: [-0.240000000000000 2.100000000000000]
+                   YLimMode: 'manual'
+                 YMinorGrid: 'off'
+                 YMinorTick: 'off'
+                     YScale: 'linear'
+                      YTick: [1x9 double]
+                 YTickLabel: {9x1 cell}
+             YTickLabelMode: 'manual'
+         YTickLabelRotation: 0
+                  YTickMode: 'manual'
+                     ZColor: [1x3 double]
+                 ZColorMode: 'auto'
+                       ZDir: 'normal'
+                      ZGrid: 'on'
+                     ZLabel: [1x1 Text]
+                       ZLim: [-1 1]
+                   ZLimMode: 'auto'
+                 ZMinorGrid: 'off'
+                 ZMinorTick: 'off'
+                     ZScale: 'linear'
+                      ZTick: [-1 0 1]
+                 ZTickLabel: ''
+             ZTickLabelMode: 'auto'
+         ZTickLabelRotation: 0
+                  ZTickMode: 'auto'
+
+
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+set(findall(gcf,'-property','FontName'),'TimesNewRoman')
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.graphics.primitive.world.Group/set')" style="font-weight:bold">matlab.graphics.primitive.world.Group/set</a>
+Object passed to method 'set' must be scalar.
+} 
+set(findall(gcf,'-property','FontName'),'FontName','TimesNewRoman')
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+{Operation terminated by user during
+alternatePrintPath>LocalCallgenerateGraphicsOutput (line 779)
+
+
+In alternatePrintPath>LocalGenerateRasterOutput (line 862)
+
+
+
+In alternatePrintPath>LocalGenerateFileOutput (line 646)
+
+
+
+In alternatePrintPath (line 106)
+
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print', '/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m', 215)" style="font-weight:bold">print</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2015a.app/toolbox/matlab/graphics/print.m',215,0)">line 215</a>)
+    pj = alternatePrintPath(pj);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 97)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',97,0)">line 97</a>)
+    print('-dpng','-r300',fname);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('simpsonsplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m', 7)" style="font-weight:bold">simpsonsplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/simpsonsplot.m',7,0)">line 7</a>)
+    simpsonsplot('exponential', 4)
+} 
+set(findall(gcf,'-property','FontName'),'FontName','TimesNewRoman'
+ set(findall(gcf,'-property','FontName'),'FontName','TimesNewRoman'
+                                                                   |
+{Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+} 
+set(findall(gcf,'-property','FontName'),'FontName','TimesNewRoman'))
+ set(findall(gcf,'-property','FontName'),'FontName','TimesNewRoman'))
+                                                                    |
+{Error: Unbalanced or unexpected parenthesis or bracket.
+} 
+set(findall(gcf,'-property','FontName'),'FontName','TimesNewRoman')
+set(findall(gcf,'-property','FontName'),'FontName','TimesNewRoman')
+set(findall(gcf,'-property','FontSize'),'FontSize',12)
+set(findall(gcf,'-property','FontName'),'FontName','Times New Roman')
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_exponential_2.png
+Wrote simpsonsplot_exponential_2.pdf
+Wrote simpsonsplot_exponential_4.png
+Wrote simpsonsplot_exponential_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+Wrote simpsonsplot_linear_2.png
+Wrote simpsonsplot_linear_2.pdf
+Wrote simpsonsplot_linear_4.png
+Wrote simpsonsplot_linear_4.pdf
+help method
+
+method not found.
+
+Use the Help browser search field to <a href="matlab:docsearch method">search the documentation</a>, or
+type "<a href="matlab:help help">help help</a>" for help command options, such as help for methods.
+
+help integration
+
+integration not found.
+
+Use the Help browser search field to <a href="matlab:docsearch integration">search the documentation</a>, or
+type "<a href="matlab:help help">help help</a>" for help command options, such as help for methods.
+
+rectangleplot
+{Undefined function or variable 'dA'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('rectangleplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/rectangleplot.m', 62)" style="font-weight:bold">rectangleplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/rectangleplot.m',62,0)">line 62</a>)
+    th = title(sprintf('Sums: Area = %.4f; \\DeltaA = %.4f',sum(A),sum(dA)));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('rectangleplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/rectangleplot.m', 4)" style="font-weight:bold">rectangleplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/rectangleplot.m',4,0)">line 4</a>)
+    rectangleplot('exponential', 2)
+} 
+rectangleplot
+{Undefined function or variable 'x'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('saveplots', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/saveplots.m', 3)" style="font-weight:bold">saveplots</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/saveplots.m',3,0)">line 3</a>)
+set(gca,'XTick',x);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('rectangleplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/rectangleplot.m', 76)" style="font-weight:bold">rectangleplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/rectangleplot.m',76,0)">line 76</a>)
+    saveplots(fname);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('rectangleplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/rectangleplot.m', 4)" style="font-weight:bold">rectangleplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/rectangleplot.m',4,0)">line 4</a>)
+    rectangleplot('exponential', 2)
+} 
+rectangleplot
+Wrote rectangleplot_exponential_2.png
+Wrote rectangleplot_exponential_2.pdf
+Wrote rectangleplot_exponential_4.png
+Wrote rectangleplot_exponential_4.pdf
+Wrote rectangleplot_exponential_2.png
+Wrote rectangleplot_exponential_2.pdf
+Wrote rectangleplot_exponential_4.png
+Wrote rectangleplot_exponential_4.pdf
+Wrote rectangleplot_linear_2.png
+Wrote rectangleplot_linear_2.pdf
+Wrote rectangleplot_linear_4.png
+Wrote rectangleplot_linear_4.pdf
+Wrote rectangleplot_linear_2.png
+Wrote rectangleplot_linear_2.pdf
+Wrote rectangleplot_linear_4.png
+Wrote rectangleplot_linear_4.pdf
+simpsonsplot
+Wrote simpsonplot_exponential_2.png
+Wrote simpsonplot_exponential_2.pdf
+!mv simpsonsplot.m simpsonplot.m
+rectangleplot
+Wrote rectangleplot_exponential_2.png
+Wrote rectangleplot_exponential_2.pdf
+Wrote rectangleplot_exponential_4.png
+Wrote rectangleplot_exponential_4.pdf
+Wrote rectangleplot_exponential_2.png
+Wrote rectangleplot_exponential_2.pdf
+Wrote rectangleplot_exponential_4.png
+Wrote rectangleplot_exponential_4.pdf
+Wrote rectangleplot_linear_2.png
+Wrote rectangleplot_linear_2.pdf
+Wrote rectangleplot_linear_4.png
+Wrote rectangleplot_linear_4.pdf
+Wrote rectangleplot_linear_2.png
+Wrote rectangleplot_linear_2.pdf
+Wrote rectangleplot_linear_4.png
+Wrote rectangleplot_linear_4.pdf
+trapezoidplot
+Wrote trapezoidplot_exponential_2.png
+Wrote trapezoidplot_exponential_2.pdf
+Wrote trapezoidplot_exponential_4.png
+Wrote trapezoidplot_exponential_4.pdf
+Wrote trapezoidplot_exponential_2.png
+Wrote trapezoidplot_exponential_2.pdf
+Wrote trapezoidplot_exponential_4.png
+Wrote trapezoidplot_exponential_4.pdf
+Wrote trapezoidplot_linear_2.png
+Wrote trapezoidplot_linear_2.pdf
+Wrote trapezoidplot_linear_4.png
+Wrote trapezoidplot_linear_4.pdf
+Wrote trapezoidplot_linear_2.png
+Wrote trapezoidplot_linear_2.pdf
+Wrote trapezoidplot_linear_4.png
+Wrote trapezoidplot_linear_4.pdf
+trapezoidplot
+{Attempted to access A(2); index out of bounds because numel(A)=1.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trapezoidplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/trapezoidplot.m', 47)" style="font-weight:bold">trapezoidplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/trapezoidplot.m',47,0)">line 47</a>)
+    dA(i) = A(i) - Ae(i);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('trapezoidplot', '/Users/robertweigel/git/computingforscientists/NumericalIntegration/trapezoidplot.m', 4)" style="font-weight:bold">trapezoidplot</a> (<a href="matlab: opentoline('/Users/robertweigel/git/computingforscientists/NumericalIntegration/trapezoidplot.m',4,0)">line 4</a>)
+    trapezoidplot('exponential', 2)
+} 
+trapezoidplot
+Wrote trapezoidplot_exponential_2.png
+Wrote trapezoidplot_exponential_2.pdf
+Wrote trapezoidplot_exponential_4.png
+Wrote trapezoidplot_exponential_4.pdf
+Wrote trapezoidplot_exponential_2.png
+Wrote trapezoidplot_exponential_2.pdf
+Wrote trapezoidplot_exponential_4.png
+Wrote trapezoidplot_exponential_4.pdf
+Wrote trapezoidplot_linear_2.png
+Wrote trapezoidplot_linear_2.pdf
+Wrote trapezoidplot_linear_4.png
+Wrote trapezoidplot_linear_4.pdf
+Wrote trapezoidplot_linear_2.png
+Wrote trapezoidplot_linear_2.pdf
+Wrote trapezoidplot_linear_4.png
+Wrote trapezoidplot_linear_4.pdf
+exponential_estimate
+Rectangle method n = 2; long-hand:  A = 0.6146
+Rectangle method n = 2; vectorized: A = 0.6146
+Rectangle method n = 4; long-hand:  A = 1.1426
+Rectangle method n = 4; vectorized: A = 1.1426
+
+Trapezoid method n = 2; vectorized: A = 2.5780
+Trapezoid method n = 2; long-hand:  A = 2.5780
+Trapezoid method n = 4; vectorized: A = 2.1243
+Trapezoid method n = 4; long-hand:  A = 2.1243
+
+Simpson's method n = 2; long-hand:  A = 1.9731
+Simpson's method n = 2; for loop:   A = 1.9731
+Simpson's method n = 2; vectorized: A = 1.9731
+Coefficient array:
+
+f =
+
+     1     4     2     4     1
+
+Simpson's method n = 4; long-hand:  A = 1.9640
+Simpson's method n = 4; for loop:   A = 1.9640
+Simpson's method n = 4; vectorized: A = 1.9640
+Coefficient array:
+
+f =
+
+     1     4     2     4     2     4     2     4     1
+
