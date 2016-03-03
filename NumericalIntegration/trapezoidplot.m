@@ -7,6 +7,8 @@ else
 end
 
 if (nargin == 0)
+    trapezoidplot('quadratic', 2)
+    trapezoidplot('quadratic', 4)
     trapezoidplot('exponential', 2)
     trapezoidplot('exponential', 4)
     trapezoidplot('linear', 2)
@@ -46,6 +48,17 @@ if strcmp(curvetype,'linear')
     end    
 end
 
+if strcmp(curvetype,'quadratic')
+    eqn  = @(x) 1 + x/8 + x.^2/32;
+    eqnl = '1 + x/8 + x^2_{ }/32';
+    al   = [-0.1 4.1 -0.19 2.1];
+
+    y = eqn(x);
+    for i = 1:1:length(x)-1
+        Ae(i) = x(i+1)-x(i) + (x(i+1)^2 - x(i)^2)/(4*2);
+    end    
+end
+
 xs = linspace(0,4,10*(n+1));
 ys = eqn(xs); 
 
@@ -75,7 +88,7 @@ figure(1);clf
             plot([x(i),x(i+1)],[y(i),y(i)],'k-');
         end
     end
-    plot(xs,ys,'b','LineWidth',3);
+    plot(xs,ys,'b-','LineWidth',3);
     plot(x,y,'k.','MarkerSize',25);
     title(sprintf('Total Area = %.4f',sum(A)));
     th = title(sprintf('Sums: Area = %.4f; \\DeltaA = %.4f',sum(A),sum(dA)));
