@@ -1,0 +1,93 @@
+Consider the following scenario: You are told that the intantanous time rate of change of the position, y, of an object varies as $t$, where $a$ is a constant.  At some instant in time, you measure the position $y$.
+
+Without using integration methods covered in a calculus course, predict the position of the object a short time, $\Delta t = 0.1$, later.
+
+Answer: Mathematically you were told
+
+$dy/dt = at$
+
+and let the measured position be $y(t_1)$, where $t_1$ is the time at which the position was measured.
+
+Rewriting the above equation, but approximating $dy$ as $\Delta y = y(t_2) - y(t_1)$ and $dt$ as $\Delta t$, we have
+
+$\Delta y = \Delta t at$
+
+which can be rewritten as
+
+$y(t + \Delta t) - y(t_1) = \Delta t at_1$
+
+or, defining t_2 = \Delta t + t_1
+
+$y(t_2) - y(t_1) = \Delta t at_1$
+
+and then
+
+$y(t_2) = y(t_1) + \Delta t at_1$
+
+which is a prediction for the position a short time later.
+
+Suppose now you were asked what the position would be at $t_2$, which is $t_1 + \Delta t$.  The equation
+
+$y(t_2) = y(t_1) + \Delta t at_1$	(1)
+
+has only one unknown, y(t_1).  Equation (1) applies for any two values of t_2 and t_1.  So we can write
+
+$y(t_3) = y(t_2) + \Delta t at_2$	(2)
+
+Equation (2) has only one unknown, $y(t_2)$, which can be computed from equation (1).  To estimate y at any value of t, we repeat the above process of re-writing equation (1) with different times and using previous values to solve, e.g., write
+
+$y(t_4) = y(t_3) + \Delta t at_3$	(3)
+and use the previously computed y(t_3) to solve for $y(t_4)$
+$y(t_5) = y(t_4) + \Delta t at_4$	(4)
+and use the previously computed $y(t_4)$ to solve for $y(t_5)$, etc.
+
+To see why this is an approximation, consider a graphical representation of we just did.  In computing $y(2)$ given $y(1)$, we used $\Delta t at_1$, which is $\Delta t ady/dt|t=t_1$, where $dy/dt = at$ has been used.  Because the slope was zero at $t_1 = 0$, the first step from $t_1$ to $t_2$ resulted in no increase in $y$.  The approximation is that over the time interval $\Delta t$, the slope $dy/dt$ does not change from what it was at the beginning of the interval.
+
+As as alternative, we note that
+$dy = atdt$
+
+$\int dy = \int a t dt$
+
+$y(t_N)-y(t_1) = \int a t dt \simeq a \sum_{t=t_1}^{t=t_N} t_i \Delta t$
+
+where the continuous integral on the right-hand-side has been approximated using the "left" rectangle method and $\Delta t = (t_N-t_1)/N$ and the answer will be the same as that found by the above method.  A sketch of the rectangles associated with this method will show that the estimate of area will be an underestimate.
+
+To improve the accuracy, we can reduce \Delta t or seek an alternative algorithm that will has a higher accuracy give the same \Delta t.  Given the limitation just noted, we can use the average slope between $t_1$ and $t_2$:
+
+$y(t_2) = y(t_1) + \Delta t a (t_1 + t_2)/2$	(5)
+
+and this method will give the same result as using the numerical integration approach when the Trapezoid method is used instead of the rectangle method.
+
+The methods described thus far apply to differential equations of the form
+
+$dy/dt = f(t)$
+
+More generally, we will want to find a numerical solution to
+
+$dy/dt = f(y,t)$
+
+We can use the method in which the slope over the interval $t_1$ to $t_2$ was approximated using the slope at $t_1$:
+
+$y(t_2) = y(t_1) + \Delta t f(y(t_1),t_1)$
+
+but the method in which the slope over the interval is approximated using averages of the slopes at $t_1$ and $t_2$
+
+$y(t_2) = y(t_1) + \Delta t (f(y(t_1),t_1) + f(y(t_2),t_2))/2$
+
+has a complicaton - the right-hand-side of the equation contains the unknown y(t_2).  One possibility is to re-write the above equation as
+
+$y(t_2) - f(y(t_2),t_2)/2 = y(t_1) + \Delta t f(y(t_1),t_1)/2$
+
+and use guesses for $y(t_2)$ to compute the left-hand-size until it equals the right-hand-side.  Another possibility is called Heun's method.  In Heun's method, the term
+
+$f(y(t_2),t_2)$
+
+is approximated by using Euler's method to compute y(t_2)
+
+$y(t_2) = y(t_1) + \Delta t (f(y(t_1),t_1)$
+
+giving
+
+$y(t_2) = y(t_1) + \Delta t (f(y(t_1),t_1) + f(y(t_1) + \Delta t (f(y(t_1),t_1),t_2))/2$
+
+for which the right-hand-side is completely determined.
