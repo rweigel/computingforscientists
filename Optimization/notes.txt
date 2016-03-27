@@ -1,0 +1,49 @@
+Numerical optimization involves finding the minimum or maximum of a function.  In general, the function can be continuous or discontinuous and may or may not have continuous first and second derivatives.  
+
+In this section, we consider one-dimensional minimization of a function <math>y = f(x)</math> and note that maximization is performed by considering the minimization of <math>y = -f(x)</math>.
+
+== Brute-force ==
+
+A brute-force algorithm for computing the minimum is
+
+# Create a set of uniformily spaced test points <math>x_t</math> with the spacing at the resolution desired for the solution.
+# Compute <math>y(x_t)</math> for all test points.
+
+The advantage of this method is that it is simple to implement in a program.  The disadvantage is that it it compute-intensive.
+
+In MATLAB, this alogrithm can be written as
+<pre>
+
+</pre>
+
+== Bisection ==
+
+The bisection algorithm uses the fact that if given two points, <math>x_L</math> and <math>x_R</math> then if
+
+* <math>f(x_L) \le f(x_R)</math>, the minimum value must located at a point less than <math>x_L</math>
+* <math>f(x_L) \geq f(x_R)</math>, the minimum value must be located at a point greater than <math>x_R</math>
+
+In the following figure, the inital range of search for a minimum is <math>[a,b] = [-1,1]</math>.  Because <math>f(x_L)</math> is larger than <math>f(x_R)</math>, in the next step we only need to consider the interval <math>[a,b] = [x_L,1]</math>; the original interval has been split into two section.
+
+The bisection algorithm begins with a specification of the right and left boundaries for the search, <math>[a,b]</math> and a required accuracy of the solution, <math>delta</math>. Then
+
+# Compute the two evaluation points <math>x_L</math> and <code>x_R</math> using <math>[x_L,x_R] = [a+r,b-r]</math>, with <math>r=(b-a)/3</math>
+# If <math>f(x_L) \le f(x_R)</math>, set <math>a = x_L</math> and leave <math>b</math> unchanged.
+# If <math>f(x_L) \geq f(x_R)</math>, set <math>b = x_R</math> and leave <math>a</math> unchanged.
+# Repeat steps 1.-3. until <math>x_R-x_L < \delta</math>.
+
+Note that in the above, we have selected the location of the evaluation points to be <math>r=(b-a)/3</math> because they trisected the interval.  In the figure above, note that the two evaluation points for the second step are different than those in the first step.  If we choose the value for the right evaluation point to exactly match the evaluation point used in the first step, we will have one less function evaluation to make.
+
+== Golden Ration Bisection ==
+
+The golden ratio bisection method is the same as bisection method except for the selection of the location of the evaluation points at each step is
+
+<math>
+[x_L,x_R] = [a+r,b-r]
+</math>
+
+where
+
+<math>
+r = \frac{\sqrt{5}-1}{2}
+</math>
