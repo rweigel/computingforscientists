@@ -1,6 +1,8 @@
-Numerical optimization involves finding the minimum or maximum of a function.  In general, the function can be continuous or discontinuous and may or may not have continuous first and second derivatives.  
+Numerical optimization involves finding the minimum<sup>1</sup> of a function.  In general, the function can be multi-dimenstional, continuous or discontinuous, and may or may not have continuous first and second derivatives.  
 
-In this section, we consider one-dimensional minimization of a function <math>y = f(x)</math> and note that maximization is performed by considering the minimization of <math>y = -f(x)</math>.
+In this section, we consider one-dimensional minimization of a continuous function <math>y = f(x)</math> with a single minima in the interval <math>x = [a,b]</math>.
+
+<footnote>Maximization is performed by considering the minimization of <math>y = -f(x)</math>.</footnote>
 
 == Brute-force ==
 
@@ -33,6 +35,8 @@ The bisection algorithm begins with a specification of the right and left bounda
 # Repeat steps 1.-3. until <math>x_R-x_L < \delta</math>.
 
 Note that in the above, we have selected the location of the evaluation points to be <math>r=(b-a)/3</math> because they trisected the interval.  In the figure above, note that the two evaluation points for the second step are different than those in the first step.  If we choose the value for the right evaluation point to exactly match the evaluation point used in the first step, we will have one less function evaluation to make.
+
+This algorithm is more complex to implement than the brute-force algorithm, but in general requires less computation to find the minimum.
 
 == Golden Ration Bisection ==
 
