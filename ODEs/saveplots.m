@@ -9,6 +9,5 @@ set(findall(gcf,'-property','Interpreter'),'Interpreter','Latex')
 set(0,'defaultAxesFontName', 'Times New Roman')
 set(0,'defaultTextFontName', 'Times New Roman')
 print('-dpng','-r300',fname);
-fprintf('Wrote %s\n',fname);
 print('-dpdf',strrep(fname,'.png','.pdf'));
-fprintf('Wrote %s\n',strrep(fname,'.png','.pdf'));
+fprintf('Wrote %s{.png,.pdf}\n',strrep(fname,'.png','.pdf'));
