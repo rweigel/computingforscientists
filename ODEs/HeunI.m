@@ -3,8 +3,10 @@
 % with
 % v(1) = 0 m/2, g = 9.8 m/s^2, and L = 10 m.
 
-% Exact solution
+% Exact solution for L -> Inf
 % v(t) = -g*t
+
+% http://people.uncw.edu/hermanr/mat361/ODEBook/ODE1.pdf
 
 clear;
 addpath([pwd(),filesep(),'..',filesep(),'m']);
@@ -43,17 +45,18 @@ for j = 1:length(Dta)
     if (j == 1)
         vex = -g*t;
 
-
         figure(1);clf;grid on;hold on;
             plot(t,vex,'k.','MarkerSize',25);
             plot(t,v,'b.','MarkerSize',25);
             plot(t45,v45,'k.','MarkerSize',10);
+            plot([0,3],[-sqrt(98),-sqrt(98)],'-');
             xlabel('$t$ [s]');
             ylabel('$v$ [m/s]');
             title('$dv/dt = -g + v^2/L; v(0) = 0$ [m/s]; $\Delta t = 0.1$')
             legend('Exact Solution to $dv/dt = -g$',...
                    'Heun''s Method Solution',...
                    'ODE45 Solution',...
+                   'Exact terminal velocity',...
                    'Location','SouthWest');
             saveplots('HeunI');
     end

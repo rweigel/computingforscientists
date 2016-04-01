@@ -1,0 +1,18 @@
+In terms of code, we could define <code>f</code> using an anonymous function, e.g., if we were asked to solve
+
+<math>dy/dt = 1 + vt</math> then
+
+t = [0:Dt:3];
+f = @(t,y) 1 + v*t;
+% Euler estimate of y(2)
+yeu(2) = y(1) + Dt*f(t(1),y(1)); % Euler estimate of y(2)
+% Heun estimate of y(2)
+y(2)   = y(1) + (Dt/2)*( f(t(1),y(1)) + f(t(2),ye(2)) );
+
+The more traditional notation is (spaces added for readablilty)
+
+t    = [0:Dt:3];                       % Time grid.
+yeu  = y(1) + Dt*(-1 + v(1)*v(1)*t(1); % Euler estimate of y(2).
+k1   = -1 +  y(1)*y(1)* t(1);          % f(t   , y)
+k2   = -1 +  yeu *yeu *(t(2));         % f(t+Dt, yeu)
+y(2) = y(1) + (Dt/2)*(k1 + k2);        % Heun estimate of y(2).

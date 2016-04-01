@@ -34,20 +34,82 @@ The bisection algorithm begins with a specification of the right and left bounda
 # If <math>f(x_L) \geq f(x_R)</math>, set <math>b = x_R</math> and leave <math>a</math> unchanged.
 # Repeat steps 1.-3. until <math>x_R-x_L < \delta</math>.
 
-Note that in the above, we have selected the location of the evaluation points to be <math>r=(b-a)/3</math> because they trisected the interval.  In the figure above, note that the two evaluation points for the second step are different than those in the first step.  If we choose the value for the right evaluation point to exactly match the evaluation point used in the first step, we will have one less function evaluation to make.
+Note that in the above, we have selected the location of the evaluation points to be <math>r=(b-a)/3</math> because they trisected the interval.  In the figure above, note that the two evaluation points for the second step are different than those in the first step.  If we choose the value for the left evaluation point in the first step to exactly match the right evaluation point used in the first step, we will have one less function evaluation to make.
 
 This algorithm is more complex to implement than the brute-force algorithm, but in general requires less computation to find the minimum.
 
 == Golden Ration Bisection ==
 
-The golden ratio bisection method is the same as bisection method except for the selection of the location of the evaluation points at each step is
+The golden ratio bisection method is the same as bisection method except for a constraint that the offsets \delta from step to step are related.
 
-<math>
-[x_L,x_R] = [a+r,b-r]
-</math>
+a     d1     1-2d1     d1    b
+|----------|-------|----------|	Step 1
 
-where
 
-<math>
-r = \frac{\sqrt{5}-1}{2}
-</math>
+              d2              b
+           |-------|----------|	Step 2
+                   x
+
+Th poisition x written using the diagram in Step 1 is
+x_{l2} = a + 1-2d_1
+for the diagram in Step 2, it is
+x_{l2} = a + d_2
+
+giving
+
+d_2 = 1-2d_1
+
+This solution requires that the offset \delta from the boundaries decreases with each step.
+
+If d_1 = 1/3, then d_2 = 1/3 and d_3 = 1/3, etc.
+
+If d_1 = 1/10, then d_2 = 4/5 and d_3 = -3/5.
+
+The additional constraint required to ensure that a common point x appears in one step to the next is
+
+\frac{\delta_2}{\delta_1} = \frac{\delta_3}{\delta_2}
+
+
+0     d1      1-2d1     d       1
+|-----------|-------|-----------| Step 1
+            x       y
+            d1
+
+               d2    w-2d2      1
+            |-------|----|------| Step 2
+                    x    y
+
+                      d3        1
+                    |----|------| Step 3
+                         x
+
+
+\delta_3 = w - 2\delta_2 
+
+where w = 1 - (\delta_1)
+
+\delta_3 = 1 - \delta_1 - 2\delta_2 
+
+\delta_3 = 1 - \delta_1 - 2\delta_2 
+
+and
+
+\frac{\delta_2}{\delta_1} = \frac{1-\delta1-2\delta_2}{\delta_2}
+
+\delta_2^2 = \delta_1- \delta_1^2 - 2\delta_1\delta_2
+
+(should be)
+\delta_2^2 = \delta_1^2 + \delta_1\delta_2
+
+which has two unknowns.  However, dividing through by \delta_1^2 and defining r = \delta_2/\delta_1 gives
+
+(should be) 
+r^2 = r-2 or r^2-r+2=0
+
+(should be) 
+r^2 = r-1 or r^2-r-1=0
+
+which has a solution that is the golden ratio
+
+r = (1 + sqrt{5})/2
+
