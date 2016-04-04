@@ -40,5 +40,5 @@ figure(2);clf;hold on;
 	% Plot only vectors outside of r = 1.
 	quiver(X(I),Z(I),Bx(I),Bz(I));
 	xlabel('x');
-	ylabel('z','Rotation',90);
+	ylabel('z','Rotation',0);
 	axis square

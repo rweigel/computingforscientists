@@ -18,12 +18,7 @@ function b = B_dipole(p)
 %   r=ro*(sin(theta)).^2.  If R = r/R_Earth, L = ro/R_Earth, lamda =
 %   90-theta (magnetic latitude), and R = L*(cos(lambda))^2, the invariant
 %   latitude (where field line crosses Earth's surface) is lambda_I =
-%   acos(1/sqrt(L)) .
-%
-%   Not that for use in ODE integration function, you may pass an
-%   arbitrary first argument and set p as the second argument:
-%
-%   b = B_DIPOLE(p,t) will return the same b as B_DIPOLE(p). 
+%   acos(1/sqrt(L)).
 %  
 %   See also BIOT_SAVART_DEMO, B_WIRE, B_RING.
 

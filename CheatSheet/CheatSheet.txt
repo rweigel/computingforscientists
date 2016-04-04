@@ -1,0 +1,980 @@
+A working set of notes on basic operations in MATLAB, IDL, and Python.
+
+The target audience is students with experience with programming in one of the languages that need to do work with another language.
+
+= Reference Material =
+
+== IDL ==
+* IDL for astronomers: http://www.astro.virginia.edu/class/oconnell/astr511/IDLguide.html
+* IDL plotting for LaTeX [http://aurora.gmu.edu/csi763/images/Idl_plotting.pdf]
+* Getting started with IDL: http://www.ittvis.com/EventsTraining/RecordedWebinars.aspx
+* Intro to IDL http://nstx.pppl.gov/nstx/Software/IDL/idl_intro.html
+* http://www.dfanning.com/
+
+== MATLAB ==
+
+* Getting started with MATLAB: [http://www.mathworks.com/access/helpdesk/help/techdoc/]
+* MATLAB Vectorization: [http://blinkdagger.com/matlab/matlab-tips-and-tricks-on-manipulating-1-d-arrays-vectors/]
+* http://www4.ncsu.edu/~mahaider/NCSU_RTG_Site/RTM_Matlab_Intro.pdf
+* http://www.math.umn.edu/~lerman/math5467/matlab_adv.pdf
+* http://web.mit.edu/biophysics/sbio/PDFs/R2_slides.pdf
+* http://vimeo.com/15752446
+
+== Python ==
+
+In order to have the capabilities of MATLAB and IDL, NumPy and MatPlotLib are required libraries.
+
+= Problems =
+
+These notes cover what is needed for basic data manipulation.  
+
+These are the types of problems that you should be able to answer quickly if you are to claim that you can program in a language:
+
+# Using a <code>for</code> (or <code>while</code>) loop, create an array named <code>A</code> with values of <code>1, 3, 5, ..., 99</code>.
+# Using nested <code>for</code> (or <code>while</code>) loops, create a <code>10x10</code> matrix with all values equal to <code>2</code>.
+# Using vector notation create an array with values of <code>1, 3, 5, ..., 99</code>.
+# Using vector notation, create a 10x10 matrix with all values equal to <code>2</code>.
+# Using vector notation, create a 10x10 identify matrix.
+# Using a <code>for</code> loop and an if statement, modify the array from problem 1. so that all values above 50 are set to zero.  Call this array <code>Am</code>.
+## Using a <code>for</code> loop, count the number of elements in <code>Am</code> that have the value of zero.
+## Using a <code>for</code> loop, compute the mean and standard deviation of <code>Am</code>.
+# Repeat problems 1.-6. except don't use any <code>for</code> or <code>while</code> loops.  (That is, use vector notation and functions such as <code>mean</code>, <code>std</code>, <code>find</code>.)
+# Use the function <code>randn</code> to create an array named <code>R</code> of length 100.
+## Plot a histogram of <code>R</code> with 10 bins using the function <code>hist</code>.
+## Plot a histogram of <code>R</code> with 20 bins using the function <code>hist</code>.
+## Plot a histogram of <code>R</code> with bins of width 1 centered on <code>-3.5, -2.5, ..., 2.5, 3.5</code>.
+## Create an array named <code>Rm</code> which only has values from <code>R</code> that are above 0.0.
+# Use the two outputs of the function <code>sort</code> to create a matrix with two columns.  The first column should be values from <code>R</code> arranged in ascending order.  The second column should be the location of the value in the array R.  (For example, if <code>R</code> had values of 0.1, -0.1, then the matrix would have row 1 with the values <code>-0.1, 2</code> and row 2 with values of <code>0.1, 1</code>.)
+# Create a function that computes a box-car average of an array.
+# Create a function that computes a matrix that contains the sums of the nearest neighbors of a matrix.
+
+= Executing Scripts =
+
+= Syntax Notes =
+* MATLAB is case sensitive.  A variable named <code>Variable</code> is not the same as <code>variable</code> and a function named <code>MyFunction</code> is not the same as <code>MyFunction</code>.  Although, you may give a variable the same name as a function in MATLAB, it is not a good idea.
+* IDL is not case sensitive.
+* Python is case sensitive.
+
+= Saving Images =
+
+== MATLAB ==
+
+=== Basic ===
+
+To make your plots readable in a presentation, use
+
+ xlabel('m','FontSize',16);
+ ylabel('b','FontSize',16);
+ set(gca,'FontSize',16);
+ print -r600 -dpng filename.png
+
+=== Advanced ===
+
+Saving png or jpeg images in MATLAB often leads to fuzzy images because of the default settings they use in their conversion routines.  In MATLAB, use
+ print -depsc filename.eps
+and then convert the eps file with the [http://www.imagemagick.org/ ImageMagick] <code>convert</code> utility that is installed by default in many Linux operating systems if the png image is not to your liking.  By saving an eps file, you always have the vector eps file and can later re-rasterize it to a different size.  I use the following function as a replacement to <code>print -deps filename.eps</code>:
+ function plotcmds(tmp)
+ 
+  set(0,'defaultaxesfontsize',16); 
+  set(0,'defaulttextfontsize',16);
+  
+  fprintf('plotcmds: plotting %s.png and .eps\n',tmp);
+  eval(sprintf('print -depsc %s.eps',tmp))
+  system(sprintf('convert -quality 100 -density 100 %s.eps %s.png',tmp,tmp));
+If you do not have <code>convert</code> you may just want to use "print screen" to rasterize an eps file.  Also, it is better to use <code>gs</code> than <code>convert</code> because <code>convert</code> is a wrapper to <code>gs</code> for many input/output format conversion pairs, and like MATLAB, <code>convert</code> sometimes uses poorly-chosen and difficult-to-modify settings when calling <code>gs</code>.  For more information, see [http://aurora.gmu.edu/projects/index.php/Hardware_Software#Ghostscript].
+
+Note that what you see on the screen will often differ from what you see in the postscript file.  From <code>help print</code>:
+
+<blockquote>
+A note on renderers: when printing figures, MATLAB does not always
+use the same renderer as on screen. This is for efficiency reasons.
+There are cases, however, where the printed output is not exactly
+like the screen representation because of this. In these instances
+specifying -zbuffer or -opengl will more likely give you output that
+emulates the screen.
+</blockquote>
+
+== IDL ==
+See also http://www.dfanning.com/graphics_tips/weboutput.html
+
+<source lang="bash">
+filename = 'filename'
+!P.FONT = 0
+!P.REGION = [0.10,0.10,0.90,0.90]
+set_plot,'PS'
+device,filename=filename+'.eps', encapsulated=1, /helvetica,font_size=16,/bold
+
+xdata = [0,1,2]
+ydata = [0,1,2]
+
+plot,xdata,ydata,psym=7,                       $
+ xrange=[0,10],yrange=[0,20],/xstyle,/ystyle,  $
+ xtitle='xlabel',ytitle='ylabel',title='title' 
+
+device, /close
+set_plot,'X'
+
+command='convert -quality 100 -density 100 '+filename+'.eps '+filename+'.png'
+spawn,command
+print,'wrote '+filename+'.eps and '+filename+'.png'
+
+stop
+end 
+</source>
+
+= Animations =
+
+Although most programs have a function for creating an animation of what is displayed in a plot window, it is usually a better practice to create a sequence of images with zero-padded frame numbers (e.g., <code>frame001.png</code>, <code>frame002.png</code>, ...).  Then, use a program such as [https://trac.ffmpeg.org/wiki/Create%20a%20video%20slideshow%20from%20images FFMPeg] to convert the frames into a video format.  Saving the individual frames allow you to easily show portions of the animation as a static image in a presentation and have fine-grained control over the video options (framerate, quality, etc.).  In addition, often a video is not needed - one can often use a file browser to page through images to show the important features in the sequence.
+
+== MATLAB ==
+
+== IDL ==
+
+= ASCII Input/Output =
+
+== Output ==
+Writing a space-delimited text file:
+
+ >>data = [1 3;2 4];
+ >>save -ascii data.matlab.txt data
+ >>!head data.matlab.txt
+
+ IDL>data = [[1,2],[3,4]]
+ IDL>openW, 101, 'data.idl.dat'
+ IDL>printf, 101, FORMAT='(%"%0.7e %0.7e")',transpose(data)
+ IDL>close, /all
+ IDL>$head data.idl.dat
+
+== Input ==
+
+See also [[#DataFiles]] for complex examples.
+
+Reading a space or comma-delimited text file:
+
+ >>load data.txt;
+ >>data
+ data =
+ 
+     1     3
+     2     4
+  
+ >>whos data
+  Name      Size            Bytes  Class     Attributes
+ 
+  data      2x2                32  double              
+
+Notice that MATLAB prints the contents of the matrix <code>data</code> to the screen as integers, but <code>whos</code> reports that the values are doubles.
+
+ IDL>OPENR, lun, 'data.dat', /GET_LUN
+ IDL>data = FLTARR(2, 2)
+ IDL>READF, lun, data
+ IDL>close, lun
+ IDL>print,data
+In IDL you tell READF about the structure of the file (two rows by two columns) by declaring a variable with the appropriate size.  There are easier ways to read ASCII files in IDL.  See
+* http://www.dfanning.com/tips/ascii_column_data.html
+* http://www.msi.umn.edu/software/idl/tutorial/idl-rwd.html#Reading
+
+= Vectors =
+
+The syntax for creating a vector is
+ >> A = [1,2,3,4]
+
+ IDL> A = [1,2,3,4]
+Note that the commas are optional in MATLAB, but it is a good habit to include them as they are required in many other programming languages. To view A again, just type "A" on the command line and hit enter. 
+ >> A
+Put an ";" at the end of the line and hit enter.  The semicolon suppresses the echoing of the input.  In long scripts, you will want to terminate commands with a semicolon except in places where you want to do debugging.
+ IDL>print,A
+Press the up arrow key to repeat the command where you defined A.   
+To view element 2, type
+ >> A(2)
+
+ IDL>print,A(2) ; 
+or
+ IDL>print,A[2] ; preferred way according to documentation
+
+In many languages (C, Fortran, IDL) you would enter a ".0" following the integers when you created A if you meant for the elements to be floating point.  That is, you would have entered
+ >> A = [1.0,2.0,3.0,4.0];
+so that A(1)/A(2) = 0.5 and not zero (to verify this, try entering "print, 1/2" in IDL or printf("%f",1/2) in  a C program.  In Matlab, the result of 1/2 is 0.5, so the ".0" is not needed.
+
+Question: What is a shorthand way to create the vector
+ B = [1,2,3,4,1,2,3,4,1,2,3,4]
+Answer:
+  >> B = [A,A,A];
+ IDL> B = [A,A,A]
+
+= Matrices (2-D) =
+To create a matrix, type
+ >> A = [11,22;33,44];
+Note that here the semicolon has a different meaning than "suppress echoing of output": it is used to indicate a new row in a matrix.
+ IDL>A = [[11,22],[33,44]]
+To view A, type
+ >> A
+
+ A =
+ 
+     11    22
+     33    44
+or
+ IDL>print,A
+      11      22
+      33      44
+
+To access the "44" using subscript notation
+<pre>
+ >> A(2,2)
+
+ans =
+
+    44
+</pre>
+
+<pre>
+ IDL> print,A(1,1)
+       44
+</pre>
+and using array notation,
+<pre>
+ >> A(4)
+
+ ans =
+
+    44
+
+ IDL> print,A[3]
+</pre>
+MATLAB uses [http://en.wikipedia.org/wiki/Row-major_order column major] ordering, which means
+ >> A(2)
+returns 33 and not 22.  For convenience, you may use the functions SUB2IND compute the integer (i.e., 4) that corresponds to a given subscript (i.e., 2,2).  IDL uses row major ordering so the zeroth element is 11, the second element is 22, etc.
+ IDL>print,A[1]
+returns 22 and not 33.
+
+'''Question''': Use a vector to access the 11 and 44 (the diagonal elements) from A.
+
+'''Answer'''
+  >> A([1,4])
+  IDL> <nowiki>A[[0,1]]]</nowiki>
+or
+  >> [A(1,1),A(2,2)] 
+  IDL> [A[0,0],A[1,1]]
+
+'''Question''': How would you create this matrix?
+ 11 22 11 22
+ 33 44 33 44
+
+'''Answer''':
+
+ >> [A, A]
+
+'''Question:''' How would you create this matrix?
+ 11 22
+ 33 44
+ 11 22
+ 33 44
+
+'''Answer:'''
+ >> [A ; A];
+
+= Functions =
+To find out about a function, type
+ >> help function_name
+For example
+ >> help size
+To call a function, simply type
+ >> size(A)
+or
+ >> B = size(A)
+In the previous section I said that you could may access the diagonal elements of A using two forms.
+To verify that A(2,2) is the same as A(4), use SUB2IND, which requires information about the size of A and the requested element.
+ >> help sub2ind
+ >> sub2ind(size(A),2,2)
+
+Question: Use the function FLIPLR to create the vector
+ B = [1,2,3,4,4,3,2,1];
+using
+ A = [1,2,3,4];
+
+= Vector Operators =
+
+== The magic colon ==
+* Context 1: To build a vector
+ >> A = [1:4];
+gives
+ A = [1,2,3,4];
+* Context 2: selecting all elements of a row or column.  If
+ >> B = [A ; A];
+select the first column of B by entering
+ >> B(:,1)
+To select the first row of B, type
+ >> B(1,:)
+* Context 3: to create a regular array
+ >> A = [1:2:5]
+gives
+ A = [1,3,5]
+So that [a:step:b] means create the array [a, a+step, a+2*step, ..., b];
+
+Question: What is the last number created by this command?
+ >> A = [1:2:4]
+Answer
+ 3
+So the last number created by the magic colon in this context is always less than or equal to b.
+
+Question: Use the magic colon to create the vector
+ [1,-1,-3,-5]
+Answer
+ [1:-2:-5]
+
+Question: Use the magic colon to access every other row of the matrix A created by
+ >> A = rand(5,5);
+Answer:
+ A([1:2:5],:)
+
+* Context 4: To flatten a matrix
+Suppose
+ >> A = rand(5,5)
+To turn A into a vector, type
+ >> A(:)
+
+Question: What are the dimensions of A(:)?
+
+Answser:
+ size(A) = [25, 1]
+
+== Addition and Subtraction ==
+* Scalar addition
+If
+ >> A = [1, 3 ; 2, 4];
+then
+ A(1) + A(2) = 3
+
+* Matrix addition
+ A + A = (1+1)  (3+3) = 2 6
+         (2+2)  (4+4)   4 8
+Matrix addition of A and B requires that size(A) == size(B).
+
+== Multiplication and Division ==
+* Scalar multiplication
+If
+ A = [1, 2 ; 3, 4];
+then
+ A(1)*A(3) =  3
+or using the alternative addressing method,
+ A(1,1)*A(1,2) = 3
+* To do element-by-element multiplication, use ".*".  The "." indicates that the multiplication should be element-by-element and not regular matrix multiplication.
+
+Question: If
+ A = 1 3
+     2 4
+what would you expect
+ A.*A to be?
+Answer:
+ 1 9
+ 4 16
+
+Question: What is A*A?
+Answer: It is the matrix product.
+  7 15 
+ 10 22
+
+Question: What would you expect
+ A./A
+to be?
+Answer: 
+ 1 1
+ 1 1
+Note this matrix can be created using the function ONES.
+
+= Looping =
+ for i=[1:4]
+    A(i) = i;
+  end
+Creates
+ A = [1,2,3,4];
+Note that the square braces in "i=[1:4]" are optional and are usually omitted in this context.  The square brace in statements such as
+ >> A = [1:4];
+is also optional, but is usually not omitted in this context.
+
+Question: What is A that results from the following loop?
+ for i = 3:3:8
+   A(i) = i;
+ end
+Answer:
+ A = [3,6];
+Note that as discussed for the magic colon, [3:3:8] gets expanded to [3,6] not [3,6,9].
+
+= Vectorization =
+You have probably heard about vectorization.  In scripting languages, vectorization generally leads to decreased execution time.  Vectorization _usually_ leads to code that is easier to read.  For example,
+ for i = [1:4]
+   A(i) = i;
+ end
+gives the same result as
+ A = [1:4];
+or
+ A([1:4]) = [1:4];
+
+Question: Vectorize the following:
+ for i=1:100
+    A(i) = 101-i;
+ end
+Answer:
+ A([1:100]) = [100:-1:1];
+or
+ A = [100:-1:1];
+
+'''Question''': Given
+ >> A = reshape([1:100],10,10);
+write a for loop that creates a 1-D array that contains the diagonal elements of A.  Do the same without a for loop.
+
+'''Question:''' Create <code>A</code> in the following two code blocks without using a for loop.  Hint: You may need to use one or more of the following functions: <code>ONES, RESHAPE, REPMAT, CUMSUM</code>.  You may find this tech note useful: [http://www.mathworks.com/support/tech-notes/1100/1109.html html]
+
+ for j=1:5
+ for i=1:5
+   A(i,j) = i;
+ end
+ end
+
+A solution:
+ Av = repmat([1:5]',1,5)
+ sum(Av(:)-A(:)) % Should be zero
+
+ for j=1:5
+ for i=1:5
+   A(i,j) = i+j;
+ end
+ end
+
+A solution
+ Av = cumsum([ [2:6] ; ones(4,5) ])
+ sum(Av(:)-A(:)) % Should be zero
+ % or
+ Av = repmat([1:5]',1,5) + repmat([1:5],5,1)
+ sum(Av(:)-A(:)) % Should be zero
+ % or (Oscar found this)
+ Av=hankel(2:5,5:10)
+ sum(Av(:)-A(:)) % Should be zero
+
+A collection of tricks for reading data files and pre-processing data, based on issues that students encountered.
+
+= Data Files =
+
+== ASCII Files With Non-numeric characters ==
+
+MATLAB can easily read ASCII files with values that are separated by spaces and tabs and records that are separated by newlines.  For example, a file named a.txt with contents
+ 0 1 2
+ 3 4 5
+can be read using (the data will be placed in a matrix named <code>a</code>):
+ load a
+ a
+
+Often data files have additional characters, for example, <code>:</code> and <code>/</code>.  Such files cannot be read directly using <code>load</code>.
+
+<pre>
+8/11/2012	14:00:00.014.262	158.866	80.3515	223.167
+8/11/2012	14:00:00.029.887	158.885	80.285	223.215
+8/11/2012	14:00:00.045.512	158.948	80.1195	222.661
+8/11/2012	14:00:00.061.137	159.011	80.3179	222.358
+8/11/2012	14:00:00.076.762	158.837	80.3302	222.826
+8/11/2012	14:00:00.092.387	159.014	80.3052	223.354
+8/11/2012	14:00:00.108.012	158.999	80.226	223.069
+8/11/2012	14:00:00.123.637	159.055	80.1786	222.017
+8/11/2012	14:00:00.139.262	158.909	80.3855	222.247
+8/11/2012	14:00:00.154.887	158.833	80.3708	223.342
+</pre>
+
+In the following, the entire file with one call.  The file could be read line-by-line, but this will be slower.
+<pre>
+fid = fopen('a.txt');
+s = fscanf(fid,'%c'); % Read entire file at once.
+fclose(fid);
+s = regexprep(s,'/',' '); % Replace all slashes with a space
+s = regexprep(s,':',' '); % Replace all colons with a space
+% Replace patterns such as 11.98.987 with 11 98 987
+% Use a program such as http://www.regexe.com/ to figure out regular expression and replacement pattern
+s = regexprep(s,' ([0-9][0-9])\.([0-9][0-9][0-9])\.([0-9][0-9][0-9])',' $1 $2 $3');
+% string now contains only spaces and newlines.  Convert to array using str2num.
+d = str2num(s);
+</pre>
+
+== Reading Many Files ==
+
+If the data you are interested in span many files, the following examples contain some techniques that may be used.  First, create a script named <code>getdata.m</code> that downloads and saves the files of interest.
+
+The following example reads the contents of the files in subdirectories of ftp://aftp.cmdl.noaa.gov/data/ozwv/SurfaceOzone/BAO/ that start with <code>bao_o3_6m_hourlymean</code>.
+
+getdata.m
+<pre>
+urlo = 'ftp://aftp.cmdl.noaa.gov/data/ozwv/SurfaceOzone/BAO/';
+
+for yr = 2008:2009
+    if yr == 2008
+       m = 7; % In 2008, first file is July
+    else
+       m = 1;
+    end
+    for m = 1:12
+        fname = sprintf('bao_o3_6m_hourlymean_%02d_%d.dat',m,yr); % Form the filename
+        url = sprintf('%s/%d/%s',urlo,yr,fname); % Append filename to base url
+        if ~exist(fname) % If file not already downloaded
+            fprintf('Attempting to download %s\n',url);
+            [f,stat] = urlwrite(url,fname); % Save file in current directory  
+            if (stat == 1)
+                fprintf('Wrote %s\n',fname);
+            end
+            if (stat == 0)
+                fprintf('Failure\n');
+            end   
+        end
+        fclose(fid);
+    end
+end
+</pre>
+
+The files have the following structure ([ftp://aftp.cmdl.noaa.gov/data/ozwv/SurfaceOzone/BAO/2008/bao_o3_6m_hourlymean_07_2008.dat full file]).  In this case, each line is read.
+
+<pre>
+                                                    MIXING RATIO OF SURFACE OZONE IN PARTS PER BILLION
+                                                    STATION BAO  6m AGL
+                                                    MONTH    JUL  YEAR 2008
+                                                    EQUIPMENT  TEI O3 ANALYZER MODEL 49I
+
+   GMT     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24  MEAN   MAX
+  DATE
+   1   999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9
+   2   999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9
+   3   999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9
+   4   999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9 999.9
+</pre>
+
+readdata.m
+<pre>
+clear;
+i = 1;
+linea = '';
+for yr = 2008:2009 % Loop through years
+    if yr == 2008
+       mo = 7;
+    else
+       mo = 1;
+    end
+    
+    for m = mo:12 % Loop through month
+        fname = sprintf('bao_o3_6m_hourlymean_%02d_%d.dat',m,yr);
+
+        fid = fopen(fname); % Open file in current directory
+        for k = 1:7 % Read first seven lines and ignore.
+            line = fgetl(fid);
+        end
+        while 1
+            line = fgetl(fid); % Read a line.
+            if ~ischar(line), break, end % Reached end of file.
+            if (isempty(regexp(line,'[A-Z]'))) % Line does not have A-Z or a-z
+                line(6:end-length(' 999.9 999.9'))
+                break
+                % Keep all parts of line after day of month
+                linea = [line(6:end-length(' 999.9 999.9')),linea];   % Store the line and convert from string to decimal.
+                i = i+1;
+            end
+        end
+        fclose(fid);
+    end
+    
+end
+
+d = str2num(linea);
+h = [1:length(d)];
+d(d==999.9) = NaN;
+plot(h,d);
+xlabel('Hours since 08/01/2008');
+</pre>
+
+== Filling Gaps ==
+
+The following data set has a gap at <code>t=5</code>.
+ t = [0,1,2,3,4,6,7];
+ x = [0,1,0,1,3,4,5];
+For a long array, the maximum and minimum gap size can be found using
+ max(diff(t))
+ min(diff(t))
+The location of the first gap can be found using
+ I = find(diff(t)>1);
+ I(1)
+and to use method (a), compute the raw periodogram using
+ tr = t(1:I(1))
+ xr = x(1:I(1))
+To use method (b), perform linear interpolation using the <code>interp1</code> function to compute interpolated values from time <code>t(1)</code> to <code>t(end)</code>:
+ yi = interp1(t,x,[t(1):t(end)])
+
+= IDL/MATLAB translation =
+
+Note - many commands not tested (especially IDL).
+
+{| border="1" style="border:1px"
+|-
+! Operation
+! MATLAB
+! IDL
+|-style="border:solid"
+| Case sensitive
+| yes
+| NO
+|-
+| Comment
+| %
+| ;
+|-
+| Suppress output of line
+| ; at end of line
+| default
+|-
+| Suppress output of line
+| ; at end of line
+| default
+|-
+| Show output of line
+| default
+| print,COMMAND
+|-
+| Continue command
+| ...
+| $
+|-
+| Concatenate lines of code
+| LINE1 ; LINE2
+| LINE1 & LINE2
+|- 
+| Transpose 
+| x' or transpose(x) 
+| TRANSPOSE(x)
+|-
+| Create array
+| x=[1,3,5,7] or x=[1:2:6] or x=1:2:7
+| x=[1,3,5,7] 
+|-
+| Address array
+| x(1) is 1 (1-based indexing)
+| x[0] is 1 (0-based indexing)
+|-
+| Address array
+| x(3:4) (note potential problem is x is a function)
+| x[3,4] (x(3,4) OK, but depreciated)
+|-
+| Create 2x3 matrix
+| X = [1,2,3;4,5,6]
+| X = [[1,2,3],[4,5,6]]
+|- 
+| Address matrix with single index 
+| X(1:3) returns [1,4,2]
+| X[[1,2,3]] returns [2,3,4]
+|- 
+| Address matrix subscript 
+| X(1,1) = X(row=1,column=1) = 2
+| X(0,0) = X(column=0,row=0) = 2
+|- 
+| Address matrix subscript 
+| X(1,2) = 2
+| X(0,1) = 4
+|- 
+| Element-by-element multiply
+| X.*X = [1 4 9;16 25 36]
+| X*X = [1 4 9;16 25 36]
+|-
+| Element-by-element divide
+| X./X  = [1 0.5 0.33;0.25 0.2 0.16]
+| ?
+|-
+| Matrix multiply
+| X*X
+| X##X
+|-
+| Matrix exponentiation
+| X^2
+| ?
+|-
+| Integer arrays
+| x=[0:9] or x=0:9 (but x is actually a double array)
+| x=INDGEN(10)
+|-
+| Float array
+| x=[0:9] 
+| x=FINDGEN(10)
+|-
+| Byte array
+| x=byte(0:7)
+| x=BINDGEN(8) 
+|-
+| Complex array
+| x=[1:5];y=[1:5];z=x+i*y;
+| x=CINDGEN(8) 
+|-
+| Convert matrix to 1-row matrix array
+| X(:) or X = reshape(X,1,numel(X)) = [1 4 2 5 3 6]
+| ?
+|-
+| Convert matrix to 1-column matrix array
+| X(:)' or X = reshape(X,numel(X,1)) = = [1 ; 4 ; 2 ; 5 ; 3 ; 6]
+| ?
+|-
+| Add elements of rows 
+| sum(X) or sum(X,1) = [5 7 9];
+| ?
+|-
+| Add elements of columns
+| sum(X,2) = [6 ;
+| ?
+|-
+| Add all elements
+| sum(x(:))
+| TOTAL(X)
+|-
+| Matrix size
+| size(X)
+| SIZE(X,/DIMENSIONS)
+|- 
+| Array length
+| length(x)
+| N_ELEMENTS(x)
+|- 
+| Number of elements in matrix
+| numel(X) or prod(size(X)) or length(X(:))
+| N_ELEMENTS(X) or TOTAL(SIZE(X,/DIMENSIONS))
+|-
+| Linear vector
+| linspace(0,pi,100)
+| ?
+|-
+| Flip matrix or array
+| fliplr(X)
+| REVERSE(X,1)
+|-
+| Flip matrix or array
+| flipud(X)
+| REVERSE(X,2)
+|-
+| Rotate matrix or array
+| rot(X)
+| ?
+|-
+| Tile scalar
+| repmat(a,N,M)
+| REPLICATE(a,N,N)
+|-
+| Tile matrix or array
+| repmat(x,N,M)
+| ?
+|- 
+| Save ouput
+| diary filename.log
+| journal, 'filename.log' 
+|-
+| Start from command line
+| matlab -nodisplay -r "filename" % filename.m contains commands and ends with exit
+| idl filename ; filename.pro contains commands and ends with exit
+|-
+| Invert matrix
+| invert(X)
+| inv(X)
+|-
+| Invert matrix
+| inv(X)
+| invert(X)
+|-
+| Call system
+| !COMMAND or system(COMMAND)
+| $COMMAND or SPAWN(COMMAND)
+|-
+| Read ASCII
+| data=load('data.dat'); or load data.dat
+| 
+<pre>
+file = 'data.dat'
+nc   = 3;
+nr   = file_lines()
+row  = findgen(nc,nr)
+openr, lun, file, /get_lun
+data = fix(fltarr(nc,row[fix(nr, type=2)]))
+readf, lun, data
+close, lun
+</pre>
+|-
+| Test if variable exists
+| if exist('x'), x = x+1;end
+| if NUM_ELEMENTS(x) GT 0 then x=x+1 endif
+|-
+| Functions
+| 
+<pre>
+% functionname.m
+function [a,b] = functionname(x,y)
+
+if (nargin < 2)
+  y = 1;  
+end
+
+a = x+y;
+
+if (nargout > 1)
+ b = subfunctionname(x)
+end
+
+function c = subfunctionname(x)
+c = x+1;
+</pre>
+|
+[http://www.astro.ku.dk/~aake/teaching/cf/Info/Procedures+Functions.pdf]
+<pre>
+;functionname.pro
+function functionname, x, b=b
+
+  if (NUM_PARAMS < 2)
+    y = 1;  
+  end
+
+ if keyword_set(keystring) then b = 1
+ return, x+1
+end 
+</pre>
+|-
+| Save variables
+| save 'Filename'
+| save, FILENAME='Filename'
+|-
+| Restore variables
+| load 'Filename'
+| restore,'Filename'
+|-
+| Search array
+| bad = find(data < 0);
+| bad = where(data LT 0);
+|-
+| Pause execution by N seconds
+| pause(N)
+| wait(N)
+|-
+| Locate function on disk
+| loc = which('FUNCTIONNAME')
+| ??? routine_info(FUNCTIONNAME')
+|-
+| Search documentation
+| lookfor STRING
+| ???
+|-
+| View code for function
+| type FUNCTIONNAME
+| ???
+|-
+| Execute string 
+| x=1; eval('sin(x)')
+| ??? x=1 & execute('sin(x)')
+|-
+| Easter egg
+| why
+| ?
+|-
+| Command line help
+| help FUNCTIONNAME
+| doc_library,'FUNCTIONANME'
+|-
+| Documentation in Browser
+| doc or doc FUNCTIONNAME
+| ? or ?FUNCTIONAME
+|-
+| Loops
+|
+<pre>
+for k =1:10,x(k) = k;,end
+% or
+for k =1:10
+  x(k) = k;
+end
+</pre>
+|
+<pre>
+for k=1,10 do x[k]=k
+; or
+for k=1,10 do begin
+  x[k] = k
+endfor
+</pre>
+|-
+| if
+|
+<pre>
+if (1 == 1)
+  A(1) = 1;
+elseif (1 == 2)
+  A(1) = 2;
+else
+  A(1) = 3;	
+end
+</pre>
+|
+<pre>
+if (1 EQ 1) then begin
+  A[0] = 1
+endif else begin
+  A[0] = 2
+endelse
+</pre>
+|-
+| switch
+<pre>
+ switch lower(method)
+   case {'method1','method2'}
+     disp(method);
+   case 'method3'
+     disp(method);
+   case 'method4'
+     disp(method);
+   otherwise
+     disp(method);
+ end
+</pre>
+|
+<pre>
+case method of
+  'method1': print, method
+  'method2': print, method
+  'method3': print, method
+  else: print, method
+endcase
+</pre>
+|-
+| Logic
+| >, <, ==, >=, <= ~=
+| GT, LT, EQ, GE, LE, NE
+|-
+| Double infinity
+| inf('double') or inf
+| !VALUES.D_INFINITY
+|-
+| IEEE Float infinity
+| inf('single')
+| !VALUES.F_INFINITY
+|-
+| IEEE Double NaN
+| nan('double') or nan or NaN
+| !VALUES.D_NAN 
+|-
+| IEEE Float NaN
+| nan('single')
+| !VALUES.F_NAN 
+|-
+| pi
+| pi, 180/pi
+| !PI, !RADDEG
+|-
+| Stem plot
+| STEM([1:10])
+| [http://www.physicsforums.com/showthread.php?t=319483]
+|-
+| Timing
+| tic(),toc()
+| systime(/julian)
+|}
+
+= Performance Comparisons =
+
+== FFT Comparison ==
+
+Conclusion: in IDL, select your array length carefully ([http://bobweigel.net/svn/m-rsw/compat/compare/ code]).  See [http://idlastro.gsfc.nasa.gov/idl_html_help/FFT.html].
+
+<imgc>url=http://bobweigel.net/svn/m-rsw/compat/compare/fftcompare_plot.png</imgc>

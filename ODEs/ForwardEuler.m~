@@ -1,9 +1,0 @@
-clear
-a     = 1;
-y(1) = 0;
-Dt   = 0.1;
-
-t    = [0:Dt:1];
-for i = 1:length(t)-1
-    y(i+1) = y(i) + Dt*a*t(i);
-end
