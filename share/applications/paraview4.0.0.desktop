@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=4.4.0
+Encoding=UTF-8
+Exec=/home/osboxes/Desktop/ParaView-4.4.0-Qt4-Linux-64bit/bin/paraview --mesa-llvm
+Icon=/home/osboxes/Desktop/ParaView-4.4.0-Qt4-Linux-64bit/share/icons/hicolor/96x96/apps/paraview.png
+Type=Application
+Terminal=false
+Comment=Parallel visualization application
+Name=ParaView 4.4.0
+GenericName=paraview-4.4.0
+StartupNotify=false
+Categories=Education;
