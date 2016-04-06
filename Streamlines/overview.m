@@ -89,6 +89,16 @@ for t = 2:Nsteps
 end
 
 
+% Plot the streamline as a green line
+ph(1) = plot(px,py,'g','LineWidth',3);
+% Plot the positions as a black dot
+ph(2) = plot(px,py,'k.','MarkerSize',10);
+saveplots('overview_streamline');
+
+
+% Plot zoom-in
+% Hide full streamline just drawn.
+set(ph,'Visible','Off')
 % Adjust text position and size for zoom-in figure.
 for i = 1:2
     for j = 1:2
@@ -105,19 +115,9 @@ set(th(1,3),'Visible','Off')
 set(th(2,3),'Visible','Off')
 set(gca,'FontSize',16);
 
+% Plot position 2.
 plot(px(2),py(2),'g.','MarkerSize',40);
 axis([0.5 2.5 0.5 2.5]);
 text(px(2)*1.05,py(2),'Position after first step','FontSize',16);
 saveplots('overview_streamline_step_1');
 
-break    
-figure(2);clf;hold on;grid on;
-    % Plot the positions as a green line
-    plot(px,py,'g','LineWidth',3);
-    % Plot the positions as a black dot
-    plot(px,py,'k.','MarkerSize',10);
-    % Plot an x at the initial position
-    plot(px(1),py(1),'kx','MarkerSize',15);
-
-    % Save as PDF and PNG
-    saveplots('overview_streamline');
