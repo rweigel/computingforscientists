@@ -1,6 +1,6 @@
 x = [ 1, 1, 2, 2];
 y = [ 1, 2, 1, 2];
-H = [10,20,30,40];
+H = [10,20,10,20];
 figure(1);clf;grid on;hold on;
     plot(x,y,'k.','MarkerSize',40)
     for i = 1:length(x)
@@ -16,4 +16,4 @@ figure(1);clf;grid on;hold on;
     box on;
     set(gca,'FontSize',16);
     axis([0.5 2.5 0.5 2.5])
-    saveplots('linear2D')
+    saveplots('linear2Das1D')
