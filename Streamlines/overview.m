@@ -88,6 +88,12 @@ for t = 2:Nsteps
     
 end
 
+plot(px(2),py(2),'g.','MarkerSize',20);
+axis([0 2.5 0 2.5]);
+text(px(2)*1.05,py(2),'Position after first step');
+saveplots('overview_streamline_step_1');
+
+break    
 figure(2);clf;hold on;grid on;
     % Plot the positions as a green line
     plot(px,py,'g','LineWidth',3);
