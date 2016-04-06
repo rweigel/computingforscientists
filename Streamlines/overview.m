@@ -1,6 +1,7 @@
 clear;
+
 % Create a matrix of X and Y points.
-% Create a matrix of velocities in X and Y directions (U and V)
+% Create a matrix of velocities in x- and y-directions (U and V)
 for i = 1:10
     for j = 1:10
         X(i,j) = j;
@@ -10,47 +11,48 @@ for i = 1:10
     end
 end
 
-% or, short-hand method
+% Short-hand method:
 % [X,Y] = meshgrid([1:10],[1:10]);
 % U = ones(size(X));
 % V = 1+X/2;
 
 figure(1);clf;hold on;
-  
-axis([0 11 0 11]); % Set axis limits
-% Plot vectors at positions given by X and Y
-% and velocities given by U and V
-quiver(X,Y,U,V);   
 
-hold on;
-% Add a dot at the vector base and display value.
-for i = 1:10
-    for j = 1:10
-        text(j-0.5,i-0.2,[sprintf('(%.1f,%.1f)',U(i,j),V(i,j))],'Color','black','FontSize',8);
-        plot(j,i,'b.','MarkerSize',20);
+    % Set axis limits
+    axis([-0.15 11.15 -0.15 11.15]);
+
+    % Plot vectors at positions given by X & Y and velocities given by U & V
+    quiver(X,Y,U,V,'Color',[0.5,0.5,0.5]);   
+
+    % Add a dot at the vector base and display value.
+    for i = 1:10
+	for j = 1:10
+	    text(j-0.5,i-0.2,...
+		 [sprintf('(%.1f,%.1f)',U(i,j),V(i,j))],...
+		 'Color','black','FontSize',8);
+	    plot(j,i,'k.','MarkerSize',10);
+	end
     end
-end
-% Add text at position (x,y) = (3,0.2)
-text(3,0.2,'Measurements of velocity (v_x,v_y)','FontSize',16);
 
-% Set the x-axis label
-ylabel(gca, 'y','Rotation',0,'FontSize',16);
-% Set the y-axis label
-xlabel(gca,'x','FontSize',16);
-% Make 1 unit in x = 1 unit in y 
-axis square
-% Set the labels for the x ticks
-set(gca,'XTick',[1:1:10])
-% Set the labels for the y ticks
-set(gca,'YTick',[1:1:10])
-% Show a grid
-grid on;
-% Increase the font size
-set(gca,'FontSize',16)
+    % Add text at position (x,y) = (3,0.2)
+    title('Measurements of velocity (vx,vy)','FontSize',16);
+    % Set the x-axis label
+    ylabel(gca,'y','Rotation',0,'FontSize',16,'HorizontalAlignment','right');
+    % Set the y-axis label
+    xlabel(gca,'x','FontSize',16);
+    % Make 1 unit in x = 1 unit in y 
+    axis square
+    % Set the labels for the x ticks
+    set(gca,'XTick',[1:1:10])
+    % Set the labels for the y ticks
+    set(gca,'YTick',[1:1:10])
+    % Show a grid
+    grid on;
+    box on;
 
-% Save the image as PDF and PNG
-print -dpdf vector_basics2quiver.pdf
-print -dpng vector_basics2quiver.png
+    % Save the image in PNG format
+    saveplots('overview_quiver');
+
 
 % Start the streamline calculation.
 px(1) = 1.0; % Initial x position
@@ -86,13 +88,13 @@ for t = 2:Nsteps
     
 end
 
-% Plot the positions as a green line
-plot(px,py,'g','LineWidth',3);
-% Plot the positions as a black dot
-plot(px,py,'k.','MarkerSize',10);
-% Plot an x at the initial position
-plot(px(1),py(1),'kx','MarkerSize',15);
+figure(2);clf;hold on;grid on;
+    % Plot the positions as a green line
+    plot(px,py,'g','LineWidth',3);
+    % Plot the positions as a black dot
+    plot(px,py,'k.','MarkerSize',10);
+    % Plot an x at the initial position
+    plot(px(1),py(1),'kx','MarkerSize',15);
 
-% Save as PDF and PNG
-print -dpdf vector_basics2contour.pdf
-print -dpng vector_basics2contour.png
+    % Save as PDF and PNG
+    saveplots('overview_streamline');
