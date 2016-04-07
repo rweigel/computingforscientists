@@ -1,6 +1,7 @@
 x = [ 1, 1, 2, 2];
 y = [ 1, 2, 1, 2];
 H = [10,20,30,40];
+
 figure(1);clf;grid on;hold on;
     plot(x,y,'k.','MarkerSize',40)
     for i = 1:length(x)
