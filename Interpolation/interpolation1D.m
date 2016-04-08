@@ -9,11 +9,13 @@ figure(1);clf;grid on;hold on;
     plot(x,y,'k.','MarkerSize',30);
     axis equal
     axis([0.5 3.5 0.5 5.5]);
-    set(gca,'XTick',[1:3])
-    set(gca,'YTick',[1:5])
-    xlabel('x');
+    set(gca,'XTick',[1:3]);
+    set(gca,'YTick',[1:5]);
+    text(x(1),y(1),'$\mbox{ }(x_1,y_1)$','HorizontalAlignment','Left');
+    text(x(2),y(2),'$\mbox{ }(x_2,y_2)$','HorizontalAlignment','Left');
+    xlabel('$x$');
     box on;
-    ylabel('y','Rotation',0,'HorizontalAlignment','Right');
+    ylabel('$y$','Rotation',0,'HorizontalAlignment','Right');
     saveplots('interpolation1D_part1')
 
 figure(2);clf;grid on;hold on;
@@ -22,9 +24,9 @@ figure(2);clf;grid on;hold on;
     axis([0.5 3.5 0.5 5.5]);
     set(gca,'XTick',[1:3])
     set(gca,'YTick',[1:5])
-    xlabel('x');
+    xlabel('$x$');
     box on;
-    ylabel('y','Rotation',0,'HorizontalAlignment','Right');
+    ylabel('$y$','Rotation',0,'HorizontalAlignment','Right');
     plot([1 2],[2 2],'b','LineWidth',3);
     plot([2 2],[2 4],'b','LineWidth',3);
     plot([1 2],[2 4],'b','LineWidth',3);
