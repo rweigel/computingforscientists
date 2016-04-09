@@ -62,13 +62,13 @@ https://www.mediawiki.org/wiki/Parsoid/Setup
 
 See https://www.mediawiki.org/wiki/Download_from_Git
  cd ~; git clone https://gerrit.wikimedia.org/r/p/mediawiki/core.git
- mv ~/core ~/mediawiki
- sudo chmod 777 ~/mediawiki/images
+ mv ~/core ~/Desktop/mediawiki
+ sudo chmod 777 ~/Desktop/mediawiki/images
  sudo mv /var/www/html/ /var/www/html-old
- sudo ln -s ~/mediawiki /var/www/html
+ sudo ln -s ~/Desktop/mediawiki /var/www/html
 Enter commands at https://getcomposer.org/download/
- mv ~/composer.phar ~/mediawiki
- cd ~/mediawiki; php composer.phar install --no-dev
+ mv ~/composer.phar ~/Desktop/mediawiki
+ cd ~/Desktop/mediawiki; php composer.phar install --no-dev
 
 Then install mediawiki using http://localhost/
 
@@ -76,7 +76,7 @@ DB name = mediawiki
 Use username/password for MySQl osboxes/osboxes.org.
 Enter username/password for wiki osboxes, osboxes.org.
 
- ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/LocalSettings.php ~/mediawiki/LocalSettings.php
+ ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/LocalSettings.php ~/Desktop/mediawiki/LocalSettings.php
 
 https://www.mediawiki.org/wiki/Extension:VisualEditor
 
@@ -84,17 +84,17 @@ git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/VisualEditor.git
 cd VisualEditor
 git submodule update --init
 
-ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/js ~/mediawiki/extensions/js
+ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/js ~/Desktop/mediawiki/extensions/js
 
-cd ~/mediawiki/skins; git clone https://gerrit.wikimedia.org/r/mediawiki/skins/Vector
+cd ~/Desktop/mediawiki/skins; git clone https://gerrit.wikimedia.org/r/mediawiki/skins/Vector
 
 = MathJax =
 
  cd ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/
  git pull https://github.com/mathjax/MathJax.git
- ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/MathJax ~/mediawiki/extensions/MathJax
+ ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/MathJax ~/Desktop/mediawiki/extensions/MathJax
  git clone https://github.com/hbshim/mediawiki-mathjax
- ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/mediawiki-mathjax ~/mediawiki/extensions/mediawiki-mathjax
+ ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/mediawiki-mathjax ~/Desktop/mediawiki/extensions/mediawiki-mathjax
  ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/mediawiki-mathjax/mwMathJaxConfig.js ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/MathJax/config/local/mwMathJaxConfig.js
 
 = nodemw =
