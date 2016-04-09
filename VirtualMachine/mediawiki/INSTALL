@@ -1,0 +1,98 @@
+
+https://radu.cotescu.com/remapping-keys-in-ubuntu-14.04/
+
+= Keyboard =
+
+From https://radu.cotescu.com/remapping-keys-in-ubuntu-14.04/: Add to <code>/usr/share/X11/xkb/symbols/</code>
+ key <LCTL> {    [ Super_L       ]   };
+ key <LWIN> {    [ Control_L     ]   };
+ key <RCTL> {    [ Super_R       ]   };
+ key <RWIN> {    [ Control_R     ]   };
+then
+ rm -rf /var/lib/xkb/*
+After re-starting X session, should work.
+
+= Octave =
+
+sudo add-apt-repository ppa:octave/stable
+sudo apt-get install octave
+
+= TODO =
+
+* Determine which octave pakages to install (sudo apt-get install octave* does not work because of dependency issues with some)
+* https://www.mediawiki.org/wiki/JQuery
+* https://www.mediawiki.org/wiki/Extension:GitHub
+* https://www.mediawiki.org/wiki/Extension:Add_HTML_Meta_and_Title
+* https://www.mediawiki.org/wiki/Manual:Combating_spam
+* Save DB and change instructions to remove need to install from web page
+
+= Chrome =
+
+Install last version of
+http://commondatastorage.googleapis.com/chromium-browser-continuous/index.html?prefix=Linux/
+
+(VirtualBox has special requirements for 64-bit OS and Google dropped support for 32 bit in 2015 or so.)
+
+= Parsoid =
+https://www.mediawiki.org/wiki/Parsoid/Setup
+
+ sudo apt-key advanced --keyserver keys.gnupg.net --recv-keys 664C383A3566A3481B942F007A322AC6E84AFDD2
+ sudo apt-key advanced --keyserver keys.gnupg.net --recv-keys 664C383A3566A3481B942F007A322AC6E84AFDD2
+ sudo apt-add-repository "deb https://releases.wikimedia.org/debian jessie-mediawiki main"
+ sudo apt-get install curl
+ sudo apt-get update && sudo apt-get install parsoid
+ cd ~;
+ git clone https://github.com/rweigel/mediawiki-tools
+ sudo rm -f /etc/mediawiki/parsoid/settings.js
+ sudo ln -s ~/mediawiki-tools/settings.js /etc/mediawiki/parsoid/settings.js
+ sudo service parsoid restart
+
+= LAMP =
+
+See also [https://www.mediawiki.org/wiki/Manual:Installation_requirements], [https://www.mediawiki.org/wiki/Apache_configuration], and [https://help.ubuntu.com/community/ApacheMySQLPHP]
+ apt-get install apache2 libapache2-mod-php5 php5-cli php-apc php5-mcrypt php5-curl php5-mysql mysql-client
+ sudo apt-get install mysql-server # set password to osboxes.org
+ sudo service apache2 restart
+
+= MediaWiki =
+
+See https://www.mediawiki.org/wiki/Download_from_Git
+ cd ~; git clone https://gerrit.wikimedia.org/r/p/mediawiki/core.git
+ mv ~/core ~/mediawiki
+ sudo chmod 777 ~/mediawiki/images
+ sudo mv /var/www/html/ /var/www/html-old
+ sudo ln -s ~/mediawiki /var/www/html
+Enter commands at https://getcomposer.org/download/
+ mv ~/composer.phar ~/mediawiki
+ cd ~/mediawiki; php composer.phar install --no-dev
+
+Then install mediawiki using http://localhost/
+
+DB name = mediawiki
+Use username/password for MySQl osboxes/osboxes.org.
+Enter username/password for wiki osboxes, osboxes.org.
+
+ ln -s ~/mediawiki-tools/LocalSettings.php ~/mediawiki/LocalSettings.php
+
+https://www.mediawiki.org/wiki/Extension:VisualEditor
+
+git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/VisualEditor.git
+cd VisualEditor
+git submodule update --init
+
+ln -s ~/mediawiki-tools/js ~/mediawiki/extensions/js
+
+= MathJax =
+
+ cd ~/mediawiki-tools/extensions/
+ git pull https://github.com/mathjax/MathJax.git
+ ln -s ~/mediawiki-tools/extensions/MathJax ~/mediawiki/extensions/MathJax
+ git clone https://github.com/hbshim/mediawiki-mathjax
+ ln -s ~/mediawiki-tools/extensions/mediawiki-mathjax ~/mediawiki/extensions/mediawiki-mathjax
+ ln -s ~/mediawiki-tools/extensions/mediawiki-mathjax/mwMathJaxConfig.js ~/mediawiki-tools/extensions/MathJax/config/local/mwMathJaxConfig.js
+
+= nodemw =
+
+ sudo apt-get install npm
+ git clone https://github.com/macbre/nodemw.git
+ cd nodemw; npm install

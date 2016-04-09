@@ -1,0 +1,215 @@
+http://www.osboxes.org/lmde
+
+username: osboxes
+password: osboxes.org
+
+mysql root password: osboxes.org
+
+Right-click is two-finger keypress near bottom of mousepad. Did not need to modify 50-synaptics.conf.
+
+= Login =
+
+Control Center > Users and Groups > Password > Check "Don't ask for password on login"
+
+= Mac Keyboard =
+
+From https://radu.cotescu.com/remapping-keys-in-ubuntu-14.04/
+ pluma /usr/share/X11/xkb/symbols/us
+	then add
+ key <LWIN> {    [ Control_L     ]   };
+ key <LALT> {    [ Super_L     ]   };		
+then
+ sudo rm -rf /var/lib/xkb/*
+ xmodmap -e 'keycode 37=Control_L'
+
+After re-starting X session, should work.  Not sure if/why all three are needed, but this worked so that Command key on a Mac was mapped to Control_L.
+
+See also http://cs.gmu.edu/~sean/stuff/n800/keyboard/old.html
+
+This did not work
+ echo "xmodmap -e 'keycode 133=ALT_L'" > ~/.xmodmap
+
+Try this https://www.youtube.com/watch?v=KE8h-n_F61g
+= LAMP =
+
+See also https://www.mediawiki.org/wiki/Manual:Installation_requirements https://www.mediawiki.org/wiki/Apache_configuration, and https://help.ubuntu.com/community/ApacheMySQLPHP
+ apt-get install apache2 libapache2-mod-php5 php5-cli php-apc php5-mcrypt
+ sudo apt-get apache2ctl restart
+ sudo apt-get install mysql-client-core-5.5
+ sudo apg-get install mysql-server-core-5.5
+ sudo apt-get install php5-curl
+ sudo service apache2 restart
+ sudo apt-get a2enmod php5
+ cd ~
+ ln -s /var/log/apache2/error.log log/
+ ln -s /var/log/apache2/access.log log/
+
+= Parsoid =
+https://www.mediawiki.org/wiki/Parsoid/Setup
+
+ sudo apt-key advanced --keyserver keys.gnupg.net --recv-keys 664C383A3566A3481B942F007A322AC6E84AFDD2
+ sudo apt-key advanced --keyserver keys.gnupg.net --recv-keys 664C383A3566A3481B942F007A322AC6E84AFDD2
+ sudo apt-add-repository "deb https://releases.wikimedia.org/debian jessie-mediawiki main"
+ sudo apt-get install curl
+ sudo apt-get update && sudo apt-get install parsoid
+ cd ~;
+ git clone https://github.com/rweigel/mediawiki-tools
+ sudo rm -f /etc/mediawiki/parsoid/settings.js
+ sudo ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/settings.js /etc/mediawiki/parsoid/settings.js
+ sudo service parsoid restart
+
+= MediaWiki =
+
+See https://www.mediawiki.org/wiki/Download_from_Git
+ cd ~; git clone https://gerrit.wikimedia.org/r/p/mediawiki/core.git
+ mv ~/core ~/mediawiki
+ sudo chmod 777 ~/mediawiki/images
+ sudo mv /var/www/html/ /var/www/html-old
+ sudo ln -s ~/mediawiki /var/www/html
+Enter commands at https://getcomposer.org/download/
+ mv ~/composer.phar ~/mediawiki
+ cd ~/mediawiki; php composer.phar install --no-dev
+
+Then install mediawiki using http://localhost/
+
+DB name = mediawiki
+Use username/password for MySQl osboxes/osboxes.org.
+Enter username/password for wiki osboxes, osboxes.org.
+
+ ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/LocalSettings.php ~/mediawiki/LocalSettings.php
+
+https://www.mediawiki.org/wiki/Extension:VisualEditor
+
+git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/VisualEditor.git
+cd VisualEditor
+git submodule update --init
+
+ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/js ~/mediawiki/extensions/js
+
+cd ~/mediawiki/skins; git clone https://gerrit.wikimedia.org/r/mediawiki/skins/Vector
+
+= MathJax =
+
+ cd ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/
+ git pull https://github.com/mathjax/MathJax.git
+ ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/MathJax ~/mediawiki/extensions/MathJax
+ git clone https://github.com/hbshim/mediawiki-mathjax
+ ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/mediawiki-mathjax ~/mediawiki/extensions/mediawiki-mathjax
+ ln -s ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/mediawiki-mathjax/mwMathJaxConfig.js ~/Desktop/computingforscientists/VirtualMachine/mediawiki/extensions/MathJax/config/local/mwMathJaxConfig.js
+
+= nodemw =
+
+ sudo apt-get install npm
+ git clone https://github.com/macbre/nodemw.git
+ cd nodemw; npm install
+= Launching Programs from Browser =
+
+Use https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally
+to allow links to launch programs.  User needs to download and install runfile.sh so that href="http://localhost/runfile.sh&arg1=param1" etc. works.  User must edit file and enter in unique info about their system that is not visible externally.  Should probably require use of a special link of Chrome.
+
+Better: have service running on virtual machine so that href="http://localhost:8000/apprunner?paraview&arg1=param1&arg2=param2 forms a value execution command.  Would be useful to have &output=log to respond with console log.
+
+= General =
+
+Change screensaver preferences to two hours.
+
+Menu -> Administration -> Log-in window and select automatic login for user osboxes
+
+Linux Mint Mate was chosen because the desktop system looks modern but is fast (due to its use of Gnome 2 instead of Gnome 3 or KDE).  Many flavors of Ubuntu were tried and all required significant, and only partially successfull efforts, to allow them to work resonably within VirtualBox.
+
+= Guest Additions =
+
+http://www.tomshardware.com/faq/id-1957309/install-virtualbox-guest-additions-linux-mint.html
+ sudo apt-get purge virtualbox*
+ sudo bash VBoxLinuxAdditions.run 
+
+= Google Chrome =
+
+Install using defaults worked.
+
+= Git =
+
+sudo apt-get install git
+
+= Textbook =
+
+cd  ~/Desktop/computingforscientists/share/applications
+sudo ln -s computingforscientists.desktop /usr/share/applications
+
+= ViViz =
+Requires Google Chrome
+
+cd ~/Desktop
+git clone https://github.com/rweigel/computingforscientists
+sudo ln -s viviz/css/viviz.desktop /usr/share/applications/
+
+= Octave =
+
+http://askubuntu.com/questions/645600/how-to-install-octave-4-0-0-in-ubuntu-14-04
+
+<pre>
+sudo apt-get install gcc g++ gfortran make libblas-dev liblapack-dev libpcre3-dev libarpack2-dev libcurl4-gnutls-dev epstool libfftw3-dev transfig libfltk1.3-dev libfontconfig1-dev libfreetype6-dev libgl2ps-dev libglpk-dev libreadline-dev gnuplot libgraphicsmagick++1-dev libhdf5-serial-dev openjdk-7-jdk libsndfile1-dev llvm-dev lpr texinfo libglu1-mesa-dev pstoedit libjack0 libjack-dev portaudio19-dev libqhull-dev libqrupdate-dev libqscintilla2-dev libqt4-dev libqtcore4 libqtwebkit4 libqt4-network libqtgui4 libsuitesparse-dev zlib1g-dev libxft-dev autoconf automake bison flex gperf gzip librsvg2-bin icoutils libtool perl rsync tar libosmesa6-dev libqt4-opengl-dev
+
+wget ftp://ftp.gnu.org/gnu/octave/octave-4.0.0.tar.gz
+tar xf octave-4.0.0.tar.gz
+rm octave-4.0.0.tar.gz
+cd octave-4.0.0/
+./configure
+make -j2
+sudo make install
+</pre>
+
+Configure gave Java and HDF5 warnings.
+
+Configuration file stored in ~/.config/octave/qt-settings
+
+= ImageMagick =
+
+sudo apt-get install graphicsmagick-imagemagick-compat
+
+= ParaView 4.4 =
+
+Works
+
+cd  ~/Desktop/computingforscientists/share/applications
+sudo ln -s paraview4.0.0.desktop /usr/share/applications
+
+= ParaView 5.0 =
+
+cd  ~/Desktop/computingforscientists/share/applications
+sudo ln -s paraview4.0.0.desktop /usr/share/applications
+
+Requires OpenGL.  Probably need Virtual Box guest additions.  
+
+Guest additions installed for VirtualBox 5.0.10 get 
+
+./paraview
+libGL error: pci id for fd 9: 80ee:beef, driver (null)
+libGL error: core dri or dri2 extension not found
+libGL error: failed to load driver: vboxvideo
+libGL error: unable to load driver: swrast_dri.so
+libGL error: failed to load driver: swrast
+Segmentation fault
+
+Upgraded to 5.0.16 and got
+
+libGL error: pci id for fd 9: 80ee:beef, driver (null)
+libGL error: unable to load driver: vboxvideo_dri.so
+libGL error: driver pointer missing
+libGL error: failed to load driver: vboxvideo
+libGL error: unable to load driver: swrast_dri.so
+libGL error: failed to load driver: swrast
+Segmentation fault
+
+This thread seems to be tracking issue https://www.virtualbox.org/ticket/12746
+
+Seems that VMWare Fusion is way to go.  May want to look into
+https://labs.vmware.com/academic/licensing-overview
+
+Success! Use ./paraview --mesa-llvm mentioned at
+http://www.paraview.org/Wiki/ParaView_Release_Notes
+
+Need to add entries in menu using
+https://community.linuxmint.com/tutorial/view/1504
+
+
