@@ -73,7 +73,7 @@ figure(2);clf
     ylabel('Error');
     title('Error = $|y(end)-y(end;\Delta t = 10^{-4})|/|y(end;\Delta t = 10^{-4})|$');
     legend('Heun','ODE45','Location','NorthWest');
-    saveplots('HeunIerror');
+    saveplots('HeunIError');
 
 figure(3);clf
     loglog(Dta,ct,'k.','MarkerSize',30);
@@ -82,5 +82,5 @@ figure(3);clf
     xlabel('$\Delta t$ [s]');
     ylabel('Evaluation Time [s]');
     legend('Heun','ODE45','Location','NorthWest');
-    saveplots('HeunIerror');
+    saveplots('HeunITime');
     
