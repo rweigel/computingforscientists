@@ -10,30 +10,14 @@ clear;
 % Solution to homogeneous equation (f(t) = 0) is
 % sin(t), so period = 2*pi.
 
-% Plot exact solution
-t = linspace(0,2*pi*3,1000);
-xe = sin(t);
+% Exact solution
+te = linspace(0,2*pi*3,1000);
+xe = sin(te);
 
-figure(1);clf;grid on;hold on;
-   plot(t,xe,'k','LineWidth',2);
-   xlabel('t');
-   ylabel('x(t)','Rotation',0,'VerticalAlignment','middle');
-   title('$d^2x/dt^2 + x = 0; x(0)=0, dx/dt|_{t=0} = 1$',...
-       'FontWeight','normal');
-   box on;
-   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   % The following are optional plot formatting commands.
-   set(gca,'XTick',[0:pi:6*pi])
-   xl = cellstr(get(gca,'XTickLabel'));
-   for i = 2:length(xl)
-        xl{i} = sprintf('%d\\pi',i-1);
-   end
-   axis tight;
-   set(gca,'XTickLabel',xl);
-   % End optional formatting commands
-   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Compute Forward Euler solution
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Forward Euler solution
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Choose Dt to be much smaller than period of 2*pi
 S = 100;
@@ -48,10 +32,56 @@ for i = 1:length(t)-1
     x(i+1) = x(i)+Dt*v(i);
 end
 
-plot(t,x,'b','LineWidth',2);
-legend('Exact',...
-    sprintf('Euler; Dt = $2\\pi/$%d',S),...
-    'Location','NorthWest');
-set(gca,'YLim',[-1.9,1.9])
-saveplots('HarmonicOscillator_Exact')
+figure(1);clf;grid on;hold on;
+   plot(te,xe,'k','LineWidth',2);
+   plot(NaN,NaN,'b.','MarkerSize',10); % So dot is larger in legend
+   plot(t,x,'b.');
+   xlabel('t');
+   ylabel('x(t)');
+   legend('Exact',sprintf('Euler; Dt = $2\\pi/$%d',S),...
+       'Location','NorthWest');
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ODE23 solution
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+[t23,y23] = ode23(@HarmonicOscillatorFunction,[0,2*pi*3],[0,1]);
+
+figure(2);clf;grid on;hold on;
+   plot(te,xe,'k','LineWidth',2);
+   plot(NaN,NaN,'b.','MarkerSize',10); % So dot is larger in legend
+   plot(t23,y23(:,1),'b.');
+   xlabel('t');
+   ylabel('x(t)');
+   legend('Exact','ODE23',...
+       'Location','NorthWest');
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The following are optional plot formatting commands.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+for i = 1:2
+   figure(i)
+   yh = get(gca,'YLabel');
+   set(yh,'Rotation',0,'VerticalAlignment','middle');
+   title('$d^2x/dt^2 + x = 0; x(0)=0, dx/dt|_{t=0} = 1$',...
+       'FontWeight','normal');
+   box on;
+   set(gca,'XTick',[0:pi:6*pi])
+   xl = cellstr(get(gca,'XTickLabel'));
+   for i = 2:length(xl)
+        xl{i} = sprintf('%d\\pi',i-1);
+   end
+   axis tight;
+   set(gca,'XTickLabel',xl);
+   set(gca,'YLim',[-1.9,1.9])
+end
+
+figure(1)
+    saveplots('HarmonicOscillator_Exact_vs_Euler')
+figure(2)
+    saveplots('HarmonicOscillator_Exact_vs_ODE23')
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% End optional formatting commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
