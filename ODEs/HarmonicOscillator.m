@@ -45,7 +45,8 @@ figure(1);clf;grid on;hold on;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ODE23 solution
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-[t23,y23] = ode23(@HarmonicOscillatorFunction,[0,2*pi*3],[0,1]);
+dydt = @(t,y) [y(2);-y(1)];
+[t23,y23] = ode23(dydt,[0,2*pi*3],[0,1]);
 
 figure(2);clf;grid on;hold on;
    plot(te,xe,'k','LineWidth',2);
