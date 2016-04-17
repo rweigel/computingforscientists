@@ -50,7 +50,7 @@ figure(1);clf;grid on;hold on;
 figure(2);clf;grid on;hold on;
    plot(te,xe,'k','LineWidth',2);
    plot(NaN,NaN,'b.','MarkerSize',10); % So dot is larger in legend
-   plot(t23,y23(:,1),'b.');
+   plot(t23,y23(:,1),'b.','MarkerSize',10);
    xlabel('t');
    ylabel('x(t)');
    legend('Exact','ODE23',...
