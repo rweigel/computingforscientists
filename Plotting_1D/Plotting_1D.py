@@ -101,3 +101,19 @@ l2, = plt.plot(B,'r')
 plt.legend(['A','B'],loc='upper left')
 plt.savefig('figures/Plotting_1D_XVI.py.png',dpi=600)
 plt.show()
+
+
+# Axis Numbering
+A = [1.0,4.0,16.0,32.0];
+plt.plot(A,'r*-', linewidth=3,markersize=10)
+plt.xticks([0,1,2,3])
+plt.savefig('figures/Plotting_1D_XVII.py.png',dpi=600)
+plt.show()
+
+# Axis Limits
+A = [1.0,4.0,16.0,32.0];
+plt.plot(A,'r*-', linewidth=3,markersize=10)
+plt.xticks([0,1,2,3])
+plt.xlim([-0.1,3.1])
+plt.savefig('figures/Plotting_1D_XVIII.py.png',dpi=600)
+plt.show()
