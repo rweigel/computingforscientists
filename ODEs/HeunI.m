@@ -27,7 +27,7 @@ for j = 1:length(Dta)
     tic();
     for i = 1:length(t)-1
         % ve(i+1) is Forward Euler estimate of velocity
-        veu(i+1) = v(i) - g*Dt + (Dt/L)*v(i);
+        veu(i+1) = v(i) - g*Dt + (Dt/L)*v(i)*v(i);
         v(i+1)   = v(i) - g*Dt + (Dt/L)*(veu(i+1)^2 + v(i)^2)/2.0;
     end
     ct(j) = toc();
