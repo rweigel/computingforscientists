@@ -33,55 +33,55 @@ plt.show()
 # Line Color
 A = [1.0,4.0,16.0,32.0];
 plt.plot(A,'r')
-plt.savefig('figures/Plotting_1D_VI.py.png',dpi=600)
+plt.savefig('figures/Plotting_1D_V.py.png',dpi=600)
 plt.show()
 
 A = [1.0,4.0,16.0,32.0];
 plt.plot(A,color=[0.5,0.5,0.5])
-plt.savefig('figures/Plotting_1D_V.py.png',dpi=600)
+plt.savefig('figures/Plotting_1D_VI.py.png',dpi=600)
 plt.show()
 
 # Marker Style
 A = [1.0,4.0,16.0,32.0];
 plt.plot(A,'*')
-plt.savefig('figures/Plotting_1D_VI.py.png',dpi=600)
-plt.show()
-
-A = [1.0,4.0,16.0,32.0];
-plt.plot(A,'*',color=[0.5,0.5,0.5])
 plt.savefig('figures/Plotting_1D_VII.py.png',dpi=600)
 plt.show()
 
 A = [1.0,4.0,16.0,32.0];
-plt.plot(A,'*',markersize=10)
+plt.plot(A,'*',color=[0.5,0.5,0.5])
 plt.savefig('figures/Plotting_1D_VIII.py.png',dpi=600)
+plt.show()
+
+A = [1.0,4.0,16.0,32.0];
+plt.plot(A,'*',markersize=10)
+plt.savefig('figures/Plotting_1D_IX.py.png',dpi=600)
 plt.show()
 
 # Line Style
 A = [1.0,4.0,16.0,32.0];
 plt.plot(A,'-',linewidth=5)
-plt.savefig('figures/Plotting_1D_IX.py.png',dpi=600)
-plt.show()
-
-A = [1.0,4.0,16.0,32.0];
-plt.plot(A,'r-')
 plt.savefig('figures/Plotting_1D_X.py.png',dpi=600)
 plt.show()
 
-# Style Combinations
 A = [1.0,4.0,16.0,32.0];
 plt.plot(A,'r-')
 plt.savefig('figures/Plotting_1D_XI.py.png',dpi=600)
 plt.show()
 
+# Style Combinations
 A = [1.0,4.0,16.0,32.0];
-plt.plot(A,'r*-')
+plt.plot(A,'r-')
 plt.savefig('figures/Plotting_1D_XII.py.png',dpi=600)
 plt.show()
 
 A = [1.0,4.0,16.0,32.0];
-plt.plot(A,'r*-', linewidth=3,markersize=10)
+plt.plot(A,'r*-')
 plt.savefig('figures/Plotting_1D_XIII.py.png',dpi=600)
+plt.show()
+
+A = [1.0,4.0,16.0,32.0];
+plt.plot(A,'r*-', linewidth=3,markersize=10)
+plt.savefig('figures/Plotting_1D_XIV.py.png',dpi=600)
 plt.show()
 
 
@@ -91,7 +91,7 @@ B = [1.1,4.4,16.9,32.9];
 l1, = plt.plot(A,'b')
 l2, = plt.plot(B,'r')
 plt.legend(['A','B'])
-plt.savefig('figures/Plotting_1D_XIV.py.png',dpi=600)
+plt.savefig('figures/Plotting_1D_XV.py.png',dpi=600)
 plt.show()
 
 A = [1.0,4.0,16.0,32.0];
@@ -99,5 +99,5 @@ B = [1.1,4.4,16.9,32.9];
 l1, = plt.plot(A,'b')
 l2, = plt.plot(B,'r')
 plt.legend(['A','B'],loc='upper left')
-plt.savefig('figures/Plotting_1D_XV.py.png',dpi=600)
+plt.savefig('figures/Plotting_1D_XVI.py.png',dpi=600)
 plt.show()
