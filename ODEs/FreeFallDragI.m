@@ -6,33 +6,40 @@ L = 1e6;
 y(1) = 2*R_E;
 v(1) = 0;
 i = 1;
+t(1) = 0;
 while (y(i)-R_E >= 0)
+   t(i+1) = t(i) + Dt;
    y(i+1) = y(i) + Dt*v(i);
    v(i+1) = v(i) + Dt*(-g);
    i = i+1;
 end
-tcg = i*Dt;
+tcg = (i-2)*Dt;
+% Check t and y arrays to verify
+%[t',y'-R_E]
 ycg = y;
 vcg = v;
-
+break
 % Expected answer
 te = sqrt(2*R_E/g);
 fprintf('Time to reach 1 R_E with constant grav. exact: %.2e [s]\n',te)
 fprintf('Time to reach 1 R_E with constant grav.: %.2e [s]\n',tcg)
 
-clear v y
+clear t v y
 R_E = 6371e3; % meters
 g   = 9.8;    % meters/second
 Dt = 10;   % seconds
 y(1) = 2*R_E;
 v(1) = 0;
+t(1) = 0;
 i = 1;
 while (y(i)-R_E >= 0)
-   y(i+1) = y(i) + Dt*v(i);
-   v(i+1) = v(i) + Dt*(-g*R_E^2/(y(i)+R_E)^2);
+    t(i+1) = t(i) + Dt;
+    y(i+1) = y(i) + Dt*v(i);
+    v(i+1) = v(i) + Dt*(-g*R_E^2)/(y(i)+R_E)^2;
    i = i+1;
 end
 tvg = i*Dt;
+[t',y'-R_E]
 yvg = y;
 vvg = v;
 
