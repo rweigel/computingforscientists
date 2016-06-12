@@ -1,0 +1,10 @@
+ParaView 5.0.1 64-bit
+	- Coloring by surface normals is no longer an option
+	- Several problems refer to students' bitbuckets and naming the files "HW__" etc
+	- 1.5.2 Vector Example: Coloring of the image is different in current version
+	- 1.6.3: Structured grid creates errors for any 2 dimensional grid
+	- 1.7.4: Missing image
+	- 1.10.2: Missing image
+	- 1.10.5: Section is a duplicate of section 1.8.2
+	- 2.7.3: Missing image
+	- 2.7.5/6: Macro errors and fails to create images

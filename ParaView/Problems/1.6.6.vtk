@@ -1,0 +1,8 @@
+# vtk DataFile Version 3.0
+Structured Points Example
+ASCII
+
+DATASET STRUCTURED_POINTS
+DIMENSIONS 4 4 4
+ORIGIN 0.0 0.0 0.0
+SPACING 1.0 1.0 1.0
