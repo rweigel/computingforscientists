@@ -1,4 +1,4 @@
-% dv/dt = 10v^2 ? g
+% dv/dt = 10v^2 - g
 clear;
 
 Dt = 0.01;

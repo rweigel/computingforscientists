@@ -7,6 +7,10 @@ mysql root password: osboxes.org
 
 Right-click is two-finger keypress near bottom of mousepad. Did not need to modify 50-synaptics.conf.
 
+= Networking =
+
+https://2buntu.com/articles/1513/accessing-your-virtualbox-guest-from-your-host-os/
+	
 = Login =
 
 Control Center > Users and Groups > Password > Check "Don't ask for password on login"
@@ -30,6 +34,7 @@ This did not work
  echo "xmodmap -e 'keycode 133=ALT_L'" > ~/.xmodmap
 
 Try this https://www.youtube.com/watch?v=KE8h-n_F61g
+
 = LAMP =
 
 See also https://www.mediawiki.org/wiki/Manual:Installation_requirements https://www.mediawiki.org/wiki/Apache_configuration, and https://help.ubuntu.com/community/ApacheMySQLPHP
@@ -102,10 +107,10 @@ cd ~/Desktop/mediawiki/skins; git clone https://gerrit.wikimedia.org/r/mediawiki
  sudo apt-get install npm
  git clone https://github.com/macbre/nodemw.git
  cd nodemw; npm install
+
 = Launching Programs from Browser =
 
-Use https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally
-to allow links to launch programs.  User needs to download and install runfile.sh so that href="http://localhost/runfile.sh&arg1=param1" etc. works.  User must edit file and enter in unique info about their system that is not visible externally.  Should probably require use of a special link of Chrome.
+Use https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally to allow links to launch programs. User needs to download and install runfile.sh so that href="http://localhost/runfile.sh&arg1=param1" etc. works.  User must edit file and enter in unique info about their system that is not visible externally.  Should probably require use of a special link of Chrome.
 
 Better: have service running on virtual machine so that href="http://localhost:8000/apprunner?paraview&arg1=param1&arg2=param2 forms a value execution command.  Would be useful to have &output=log to respond with console log.
 
@@ -212,4 +217,6 @@ http://www.paraview.org/Wiki/ParaView_Release_Notes
 Need to add entries in menu using
 https://community.linuxmint.com/tutorial/view/1504
 
+= Anaconda =
 
+https://www.continuum.io/downloads	
