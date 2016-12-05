@@ -38,6 +38,7 @@ ya(1) = h;
 
 % Numerically compute time on spring and add it to time in free fall.
 % Note that this time can be computed analytically.
+% Also note that this time is not T/2.
 f = @(t) -(vo/w)*sin(w*t) + (m*g/k)*cos(w*t) - m*g/k;
 x = fzero(f,[0.1,1.5]);
 Tx2 = Tx + x;
