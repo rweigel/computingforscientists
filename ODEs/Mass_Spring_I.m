@@ -1,6 +1,6 @@
 clear;
 
-% dv/dt = -2*k*(x-x10)
+% dv/dt = -2*k*(x-x10)/m
 % dx/dt = v
 %
 % x(0) = xo
