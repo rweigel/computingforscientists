@@ -16,7 +16,7 @@ legend(' Forward Euler Soln.',...
 legend boxoff
 text(0,-0.005,'$y(0)$');
 text(0.1,1.1+0.0005,'$y(0.1) = y(0) + \Delta t \frac{dy}{dt}|_{t=0}$');
-text(0.15,1.1095,'$y(0.2) = y(0.1) + \Delta t \frac{dy}{dt}|_{t=0.2}$');
+text(0.15,1.1095,'$y(0.2) = y(0.1) + \Delta t \frac{dy}{dt}|_{t=0.1}$');
 axis([-0.1 0.35 1.099 1.1105]);
     
 saveplots('ForwardEulerExampleDiscussion')
